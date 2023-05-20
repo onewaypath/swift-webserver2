@@ -31,6 +31,10 @@ import Vapor
 struct WebsiteController: RouteCollection {
   func boot(routes: RoutesBuilder) throws {
     routes.get(use: indexHandler)
+    routes.get("parking", use: parkingHandler)
+    routes.get("millenroad", "diligence", use: millenRoadDiligenceHandler)
+    routes.get("stoneycreek", "summary", use: stoneyCreekSummaryHandler)
+    routes.get("acronyms", use: acronymIndexHandler)
     routes.get("acronyms", ":acronymID", use: acronymHandler)
     routes.get("users", ":userID", use: userHandler)
     routes.get("users", use: allUsersHandler)
@@ -43,7 +47,25 @@ struct WebsiteController: RouteCollection {
     routes.post("acronyms", ":acronymID", "delete", use: deleteAcronymHandler)
   }
 
-  func indexHandler(_ req: Request) -> EventLoopFuture<View> {
+    func indexHandler(_ req: Request) throws -> EventLoopFuture<Response> {
+        return req.eventLoop.makeSucceededFuture(req.redirect(to: "index.html"))
+    }
+    
+
+    func millenRoadDiligenceHandler(_ req: Request) throws -> EventLoopFuture<Response> {
+        return req.eventLoop.makeSucceededFuture(req.redirect(to: "https://owpinvesting-my.sharepoint.com/:f:/g/personal/ayoung_onewaypath_com/Ere1v7NgIhNJjiXI9VR60f0BHHnlZZhMdTsXjg9EikeaEQ?e=Wo5tcr"))
+    }
+    
+    func stoneyCreekSummaryHandler(_ req: Request) throws -> EventLoopFuture<Response> {
+        return req.eventLoop.makeSucceededFuture(req.redirect(to: "https://owpinvesting-my.sharepoint.com/:b:/g/personal/ayoung_onewaypath_com/Edr47QX7T9BEqwCYoFr6fTcBfBS2U1xNC_77_D5ibOtkzg?e=sFxdpw"))
+    }
+    
+    func parkingHandler(_ req: Request) throws -> EventLoopFuture<Response> {
+        return req.eventLoop.makeSucceededFuture(req.redirect(to: "https://www.youtube.com/watch?v=lDbMnNMdFFg"))
+    }
+  
+
+func acronymIndexHandler(_ req: Request) -> EventLoopFuture<View> {
     Acronym.query(on: req.db).all().flatMap { acronyms in
       let context = IndexContext(title: "Home page", acronyms: acronyms)
       return req.view.render("index", context)

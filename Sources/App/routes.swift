@@ -30,9 +30,9 @@ import Fluent
 import Vapor
 
 func routes(_ app: Application) throws {  
-  app.get("hello") { req -> String in
-    return "Hello, world!"
-  }
+//  app.get("hello") { req -> String in
+//    return "Hello, world!"
+//  }
   
   let acronymsController = AcronymsController()
   try app.register(collection: acronymsController)
