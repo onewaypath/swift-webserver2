@@ -1,17 +1,41 @@
-# Use an appropriate base image that supports Swift and provides the necessary dependencies
-FROM swift:latest
+# ================================
+# Build image
+# ================================
+FROM swift:5.2-bionic as build
+WORKDIR /build
 
-# Set the working directory inside the container
-WORKDIR /app
+# First just resolve dependencies.
+# This creates a cached layer that can be reused
+# as long as your Package.swift/Package.resolved
+# files do not change.
+COPY ./Package.* ./
+RUN swift package resolve
 
-# Copy the Vapor project files into the container
+# Copy entire repo into container
 COPY . .
 
-# Build your Vapor project inside the container
-RUN swift build
+# Compile with optimizations
+RUN swift build --enable-test-discovery -c release
 
-# Expose the necessary ports
-EXPOSE 8080
+# ================================
+# Run image
+# ================================
+FROM swift:5.2-bionic-slim
 
-# Set the entry point command to run your Vapor executable
-CMD ["./.build/debug/Run"]
+# Create a vapor user and group with /app as its home directory
+RUN useradd --user-group --create-home --system --skel /dev/null --home-dir /app vapor
+
+# Switch to the new home directory
+WORKDIR /app
+
+# Copy build artifacts
+COPY --from=build --chown=vapor:vapor /build/.build/release /app
+# Uncomment the next line if you need to load resources from the `Public` directory
+COPY --from=build --chown=vapor:vapor /build/Public /app/Public
+
+# Ensure all further commands run as the vapor user
+USER vapor:vapor
+
+# Start the Vapor service when the image is run, default to listening on 8080 in production environment 
+ENTRYPOINT ["./Run"]
+CMD ["serve", "--env", "production", "--hostname", "0.0.0.0", "--port", "8080"]
