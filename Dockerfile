@@ -1,7 +1,8 @@
 # ================================
 # Build image
 # ================================
-FROM swift:5.2-bionic as build
+#FROM swift:5.2-bionic as build
+FROM swift:5.8-jammy as build
 WORKDIR /build
 
 # First just resolve dependencies.
@@ -9,18 +10,19 @@ WORKDIR /build
 # as long as your Package.swift/Package.resolved
 # files do not change.
 COPY ./Package.* ./
-RUN swift package resolve
+RUN swift package -v resolve
 
 # Copy entire repo into container
 COPY . .
 
 # Compile with optimizations
-RUN swift build --enable-test-discovery -c release
+RUN swift build --enable-test-discovery -c release --verbose
 
 # ================================
 # Run image
 # ================================
-FROM swift:5.2-bionic-slim
+#FROM swift:5.2-bionic-slim
+FROM swift:5.8-jammy-slim
 
 # Create a vapor user and group with /app as its home directory
 RUN useradd --user-group --create-home --system --skel /dev/null --home-dir /app vapor
