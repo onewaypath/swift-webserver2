@@ -1,0 +1,64 @@
+[
+    {
+        "name": "One Way Path at Millen Road",
+        "addressLine2": "100 King Street West, Suite 5600",
+        "phoneNumber": "+1 (416) 848-1746",
+        "emailAddress": "info@onewaypath.com",
+        "id": "3D791502-B5C0-4340-9514-107C41414F0E",
+        "province": "Ontario",
+        "aboutDescription": "One Way Path Communities builds multi-residential housing in liveable communities in and around the Greater Toronto Hamilton Area. These projects present an opportunity for equity investors to earn high rates of return with limited risk. Interested equity and debt partners are invited to contact info@onewaypath.com for more information.",
+        "city": "Toronto",
+        "postalCode": "M5X 1C9",
+        "faxNumber": "Tel: +1 (416) 848-1162",
+        "country": "Canada",
+        "displayName": "@Millen Road",
+        "addressLine1": "One Way Path Communities"
+    },
+    {
+        "name": "One Way Path at Dewitt Road",
+        "addressLine2": "100 King Street West, Suite 5600",
+        "phoneNumber": "+1 (416) 848-1746",
+        "emailAddress": "info@onewaypath.com",
+        "id": "FF64B06E-15AB-4920-A694-13CD9998DEEC",
+        "province": "Ontario",
+        "aboutDescription": "One Way Path Communities builds multi-residential housing in liveable communities in and around the Greater Toronto Hamilton Area. These projects present an opportunity for equity investors to earn high rates of return with limited risk. Interested equity and debt partners are invited to contact info@onewaypath.com for more information.",
+        "city": "Toronto",
+        "postalCode": "M5X 1C9",
+        "faxNumber": "Tel: +1 (416) 848-1162",
+        "country": "Canada",
+        "displayName": "@Dewitt Road",
+        "addressLine1": "One Way Path Communities"
+    },
+    {
+        "name": "On-Nūm Meditation Centre",
+        "addressLine2": "",
+        "phoneNumber": "",
+        "emailAddress": "admin@on-num.de",
+        "id": "FC632252-C396-4963-9D22-B25210E02E70",
+        "province": "",
+        "aboutDescription": "The On-Nūm Meditation Center is operated by One Way Path in Lieberose, Germany. We provide insight meditation based on the four foundations of mindfulness in the Therevada Buddhist Tradition.",
+        "city": "Lieberose",
+        "postalCode": "15868",
+        "faxNumber": "",
+        "country": "Germany",
+        "displayName": "@On-Nūm",
+        "addressLine1": "Markt 8"
+    },
+    {
+        "name": "Buddhavipassana Meditation Centre",
+        "addressLine2": "",
+        "phoneNumber": "",
+        "emailAddress": "info@buddhavipassana.ca",
+        "id": "7A86A4E2-1445-4FDB-87AF-C64562D5256E",
+        "province": "",
+        "aboutDescription": "The Buddhavipassana Meditation Centre is operated by One Way Path Communities in mid-town, Toronto, Canada. We provide insight meditation based on the four foundations of mindfulness in the Therevada Buddhist Tradition.",
+        "city": "",
+        "postalCode": "",
+        "faxNumber": "",
+        "country": "",
+        "displayName": "@Buddhavipassana",
+        "addressLine1": ""
+    }
+]
+
+

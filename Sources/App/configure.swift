@@ -62,6 +62,9 @@ public func configure(_ app: Application) throws {
   app.migrations.add(CreateAcronym())
   app.migrations.add(CreateCategory())
   app.migrations.add(CreateAcronymCategoryPivot())
+  app.migrations.add(CreateProject())
+  app.migrations.add(CreateWebpage())
+
   
   app.logger.logLevel = .debug
   

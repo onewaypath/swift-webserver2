@@ -1,0 +1,116 @@
+{
+    "sites": [
+        {
+            // Site: One Way Path at Millen Road
+            "siteID": "3D791502-B5C0-4340-9514-107C41414F0E",
+            "sitePages": [
+                {
+                    "name": "Overview",
+                    "leafTemplate": "template1"
+                },
+                {
+                    "name": "Community",
+                    "leafTemplate": "template1"
+                },
+                {
+                    "name": "Progress",
+                    "leafTemplate": "template1"
+                },
+                {
+                    "name": "Team",
+                    "leafTemplate": "template1"
+                }
+            ]
+        },
+        {
+            // Site: One Way Path at Dewitt Road
+            "siteID": "FF64B06E-15AB-4920-A694-13CD9998DEEC",
+            "sitePages": [
+                {
+                    "name": "Overview",
+                    "leafTemplate": "template1"
+                },
+                {
+                    "name": "Community",
+                    "leafTemplate": "template1"
+                },
+                {
+                    "name": "Progress",
+                    "leafTemplate": "template1"
+                },
+                {
+                    "name": "Team",
+                    "leafTemplate": "template1"
+                }
+            ]
+        },
+        {
+            // Site: On-Nūm Meditation Centre
+            "siteID": "FC632252-C396-4963-9D22-B25210E02E70",
+            "sitePages": [
+                {
+                    "name": "Overview",
+                    "leafTemplate": "template1"
+                },
+                {
+                    "name": "The Practice",
+                    "leafTemplate": "template1"
+                },
+                {
+                    "name": "Accommodations",
+                    "leafTemplate": "template1"
+                },
+                {
+                    "name": "Daily Schedule",
+                    "leafTemplate": "template1"
+                },
+                {
+                    "name": "Teachers",
+                    "leafTemplate": "template1"
+                },
+                {
+                    "name": "Photos",
+                    "leafTemplate": "template1"
+                },
+                {
+                    "name": "FAQ",
+                    "leafTemplate": "template1"
+                }
+            ]
+        },
+        {
+            // Site: Buddhavipassana Meditation Centre
+            "siteID": "7A86A4E2-1445-4FDB-87AF-C64562D5256E",
+            "sitePages": [
+                {
+                    "name": "Overview",
+                    "leafTemplate": "template1"
+                },
+                {
+                    "name": "The Practice",
+                    "leafTemplate": "template1"
+                },
+                {
+                    "name": "Accommodations",
+                    "leafTemplate": "template1"
+                },
+                {
+                    "name": "Daily Schedule",
+                    "leafTemplate": "template1"
+                },
+                {
+                    "name": "Teachers",
+                    "leafTemplate": "template1"
+                },
+                {
+                    "name": "Travel",
+                    "leafTemplate": "template1"
+                },
+                {
+                    "name": "FAQ",
+                    "leafTemplate": "template1"
+                }
+            ]
+        }
+    ]
+}
