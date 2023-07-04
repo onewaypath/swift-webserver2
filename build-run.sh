@@ -2,7 +2,7 @@
 
 # Create the configure.swift file or reset it to default values
 echo "Initializing configure.swift..."
-cp configure.template configure.swift
+cp Sources/App/configure.template Sources/App/configure.swift
 
 # Start the database container
 echo "Starting the database container..."
