@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>@Millen Road | Overview</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+
+    <link rel='stylesheet' id='buddhavipassana-font-css'  href='https://fonts.googleapis.com/css?family=Lato%3A300%2C300i%2C400%2C400i%2C700%2C700i%7CMuli%3A300%2C300i%2C400%2C400i&#038;ver=1.0.0' type='text/css' media='all' />
+    <!-- Bootstrap core CSS -->
+    <link href="/redesign/assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Header Custom CSS -->
+    <link href="/redesign/assets/css/header.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="/redesign/assets/css/carousel.css" rel="stylesheet">
+        <link href="/redesign/assets/css/offcanvas.css" rel="stylesheet">
+  </head>
+  <body>
+
+  </body>
+</html>
