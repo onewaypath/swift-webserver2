@@ -1,128 +1,156 @@
 #extend("millenRoad/layout/base"):
   #export("content"):
-      <section class="py-5 text-center container">
-      <div class="row py-lg-5">
-        <div class="col-lg-6 col-md-8 mx-auto">
-            <h2>Overview</h2>
-          <!-- img src="OWPG-logo.jpg" alt="One Way Path Communities" height="70">
-          <br><br><br> -->
-          <p class="lead text-muted">One Way Path Communities builds multi-residential housing in liveable communities in and around the Greater Toronto Hamilton Area. These projects present an opportunity for equity investors to earn high rates of return with limited risk while promoting access to housing.</p>
+      <div class="project-overview-panel">
+        <div class="row gx-5">
+            <div class="col-xl-2">
+                <div class="left-panel">
+                    <h4 class="theme-light-color">Project <br> Overview</h4>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-6 mb-lg-0 mb-3">
+                <div class="center-panel">
+                    <h2>One Way Path AT Millen Road</h2>
+                    <p>
+                        Our Millen Road project consists of a 7-story, 37 unit apartment building at the corner of Highway 8 and Millen Road, two arterial roads in Stoney Creek, Ontario.
+                    </p>
+                    <p>
+                        This project, which will tap into the high demand for rental housing in the Greater Toronto Hamilton Area, projects a net return of 22% per annum for equity investors over three years.
+                    </p>
+
+                    <p>
+                        Construction risk is limited by two key factors. Firstly, we apply our contracting experience to performance guarantees with sub-contrators which promotes on-time on budget construction results. Secondly, our team has combined experience building hundreds of multi-residential units in the GTHA.
+                    </p>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-6">
+                <div class="right-panel">
+                    <div class="unit-wrapper border-bottom">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-3">
+                                <h2 class="number">37</h2>
+                            </div>
+                            <div class="col-7 ps-0">
+                                <div>
+                                    <span class="detail">unit apartment building</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="unit-wrapper border-bottom">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-3">
+                                <h2 class="number">22%</h2>
+                            </div>
+                            <div class="col-7 ps-0">
+                                <div>
+                                    <span class="detail">per annum for equity investors over three years.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-button-panel pt-100">
+                        <div class="row">
+                            <div class="col-xxl-10 col-12">
+                                <div class="row justify-content-between btn-row">
+                                    <div class="col-xl-5 col-lg-6 col-5">
+                                        <a href="#" class="button-grp-warpper">
+                                            <h5>Community</h5>
+                                        </a>
+                                    </div>
+                                    <div class="col-xl-5 col-lg-6 col-5">
+                                        <a href="#" class="button-grp-warpper">
+                                            <h5>Progress</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-between btn-row">
+                                    <div class="col-xl-5 col-lg-6 col-5">
+                                        <a  href="#" class="button-grp-warpper">
+                                            <h5>Team</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      </section>
+    </div>
 
-
-        <!-- Marketing messaging and featurettes
-        ================================================== -->
-        <!-- Wrap the rest of the page in another container to center all the content. -->
-
-        <div class="container marketing">
-
-
-
-          <!-- START THE FEATURETTES -->
-
-          <hr><br><br>
-
-          <div class="row featurette">
-
-
-
-             <div class="col-md-5 order-md-1 mb-md-0 mb-3">
-              <h2 class="d-md-none mb-3 text-center"> One Way Path at Millen Road</h2>
-                <img src="/static/MillenRoad/assets/images/StoneyCreek-Photo-500.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><!--rect width="100%" height="100%" fill="#eee"/--><!--img src="StoneyCreek-Photo-500.jpg" height="376"--><!--text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text--></img>
-
+    <div class="other-projects-panel pt-100">
+        <div class="row">
+            <div class="col-xl-2">
+                <div class="left-panel">
+                    <h4 class="theme-light-color mb-4">Other Projects</h4>
+                </div>
+            </div>
+            <div class="col-xl-10">
+                <div class="row gx-xxl-5 proj-row flex-nowrap justify-content-between align-items-center">
+                    <div class="col-md-4 proj-col">
+                        <div class="proj-cards-wrapper">
+                            <div class="proj-card">
+                                <div class="proj-address">
+                                    <h2 class="text-uppercase"> @Dewitt Road</h2>
+                                </div>
+                                <div class="proj-address">
+                                    <a href="#" class="button-grp-warpper">
+                                        <h5>Click for details</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 proj-col">
+                        <div class="proj-cards-wrapper">
+                            <div class="proj-card">
+                                <div class="proj-address">
+                                    <h2 class="text-uppercase"> @Dewitt Road</h2>
+                                </div>
+                                <div class="proj-button">
+                                    <a href="#" class="button-grp-warpper">
+                                        <h5>Click for details</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 proj-col">
+                        <div class="proj-cards-wrapper">
+                            <div class="proj-card">
+                                <div class="proj-address">
+                                    <h2 class="text-uppercase"> @Dewitt Road</h2>
+                                </div>
+                                <div class="proj-address">
+                                    <a href="#" class="button-grp-warpper">
+                                        <h5>Click for details</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
-            <div class="col-md-7 order-md-2">
-                <h2 class="d-md-block d-none mb-3"> One Way Path at Millen Road</h2>
+        </div>
+    </div>
 
-                <p class="lead text-muted">Our Millen Road project consists of a 7-story, 37 unit apartment building at the corner of Highway 8 and Millen Road, two arterial roads in Stoney Creek, Ontario.</p>
-                <p class="lead text-muted">This project, which will tap into the high demand for rental housing in the Greater Toronto Hamilton Area, projects a net return of 22% per annum for equity investors over three years.</p>
-
-                <p class="lead text-muted">Construction risk is limited by two key factors. Firstly, we apply our contracting experience to performance guarantees with sub-contrators which promotes on-time on budget construction results. Secondly, our team has  combined experience building hundreds of multi-residential units in the GTHA.</p>
-
-                <!--p class="lead text-muted">Intrested equity and debt partners are invited to contact info@onewaypath.com for more information. </p-->
-
+    <div class="contactus-panel pt-100">
+        <div class="row justify-content-between">
+            <div class="col-lg-3 col-sm-6">
+                <div class="left-panel">
+                    <h4 class="theme-light-color">Contact us</h4>
+                </div>
             </div>
-
-          </div>
-<!--
-          <hr class="featurette-divider">
-
-<div class="row featurette">
-            <div class="col-md-7">
-              <h3>Rear View Rendering</h3>
-              <p class="lead text-muted">Viewing the building rendering from Millen Road shows how the building height decreases gradually to lower density away from Highway 8.</p>
+            <div class="col-lg-5 col-sm-6">
+                <div class="contact-right-panel">
+                    <p>Interested equity and debt partners are invited to email for information.</p>
+                    <a href="mailto:info@onewaypath.com" class="button-grp-warpper d-block">
+                        <h5 class="text-lowercase">info@onewaypath.com</h5>
+                    </a>
+                </div>
             </div>
-            <div class="col-md-5">
-                <img src="/static/MillenRoad/assets/images/millen-road-back-view-500.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title></img>
-
-            </div>
-          </div>
-
-          <hr class="featurette-divider">
-
-
-          <div class="row featurette">
-            <div class="col-md-7 order-md-2">
-                <h3>Highway 8 Elevation</h3>
-                <p class="lead text-muted">In keeping with City of Hamilton guidlines, the first story of the building which will include a small retail component, extends to the property line. Above the first story, the balconies are stepped back significantly to ensure privacy and light for the neighbour to the east.</p>
-
-            </div>
-            <div class="col-md-5 order-md-1">
-                <img src="assets/images/south-elevation-500x500.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title></img>
-
-
-            </div>
-          </div>
-
-          <hr class="featurette-divider">
-
-          <div class="row featurette">
-            <div class="col-md-7">
-              <h3>Rear Elevation</h3>
-              <p class="lead text-muted">The view from the rear is a mirror image of the view from Highway 8. It shows the full-length ground floor story with the privacy step backs on the easterly (left) side.</p>
-            </div>
-            <div class="col-md-5">
-                <img src="assets/images/north-elevation-500x500.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title></img>
-
-            </div>
-          </div>
-
-          <hr class="featurette-divider">
-
-          <div class="row featurette">
-            <div class="col-md-7 order-md-2">
-                <h3>Millen Road Elevation (West Side)</h3>
-                <p class="lead text-muted">Viewing the building from Millen Road (west side of the building) shows how the building is stepped back on a 45 degree angle, providing the desired transition away from Highway 8. The Millen Road pedestrian entrance and the parking entrance are also visible.</p>
-
-            </div>
-            <div class="col-md-5 order-md-1">
-                <img src="assets/images/west-elevation-500x500.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title></img>
-
-
-            </div>
-          </div>
-
-
-          <hr class="featurette-divider">
-
-          <div class="row featurette">
-            <div class="col-md-7">
-              <h3>East Side Elevation</h3>
-              <p class="lead text-muted">The easterly view again shows the transition away from highway 8 but from the opposite side.</p>
-            </div>
-            <div class="col-md-5">
-                <img src="assets/images/east-elevation-500x500.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title></img>
-
-            </div>
-          </div>
--->
-         <!-- <hr class="featurette-divider"> -->
-
-          <!-- /END THE FEATURETTES -->
-
-        </div><!-- /.container -->
+        </div>
+    </div>
   #endexport
 #endextend
