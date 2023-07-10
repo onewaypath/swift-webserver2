@@ -31,6 +31,7 @@ import Vapor
 struct WebsiteController: RouteCollection {
   func boot(routes: RoutesBuilder) throws {
     routes.get(use: indexHandler)
+    routes.get("millenroad", "index", use: millenRoadIndexHandler)
     routes.get("parking", use: parkingHandler)
     routes.get("millenroad", "diligence", use: millenRoadDiligenceHandler)
     routes.get("stoneycreek", "summary", use: stoneyCreekSummaryHandler)
@@ -50,7 +51,11 @@ struct WebsiteController: RouteCollection {
     func indexHandler(_ req: Request) throws -> EventLoopFuture<Response> {
         return req.eventLoop.makeSucceededFuture(req.redirect(to: "index.html"))
     }
-    
+
+    func millenRoadIndexHandler(_ req: Request) throws -> EventLoopFuture<View> {
+        return req.view.render("millenRoad/index")
+    }
+
 
     func millenRoadDiligenceHandler(_ req: Request) throws -> EventLoopFuture<Response> {
         return req.eventLoop.makeSucceededFuture(req.redirect(to: "https://owpinvesting-my.sharepoint.com/:f:/g/personal/ayoung_onewaypath_com/Ere1v7NgIhNJjiXI9VR60f0BHHnlZZhMdTsXjg9EikeaEQ?e=Wo5tcr"))
