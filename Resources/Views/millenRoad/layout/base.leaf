@@ -50,31 +50,22 @@
                 </div>
             </div>
         </header>
-        <div class="hero-banner">
+        <div class="hero-banner #import("hero_custom_css")">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8">
                         <div class="hero-content">
                             <h1 class="theme-light-color text-uppercase">
-                                Overview
+                                #(heroTitle)
                             </h1>
-                            <p class="text-white mb-4">
-                                One Way Path Communities builds multi-residential housing in liveable communities in and around the Greater Toronto Hamilton Area.
-                            </p>
-                            <p class="text-white">
-                                These projects present an opportunity for equity investors to earn high rates of return with limited risk while promoting access to housing.
-                            </p>
+                            #import("hero_body")
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <section class="owp-panel pt-160">
-            <div class="container">
-                #import("content")
-            </div>
-        </section>
+        #import("content")
 
         <footer class="footer">
             <div class="container">

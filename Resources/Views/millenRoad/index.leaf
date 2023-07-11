@@ -1,5 +1,16 @@
 #extend("millenRoad/layout/base"):
+  #export("hero_content"):
+    <p class="text-white mb-4">
+        One Way Path Communities builds multi-residential housing in liveable communities in and around the Greater Toronto Hamilton Area.
+    </p>
+    <p class="text-white">
+        These projects present an opportunity for equity investors to earn high rates of return with limited risk while promoting access to housing.
+    </p>
+  #endexport
+  
   #export("content"):
+  <section class="owp-panel pt-160">
+    <div class="container">
       <div class="project-overview-panel">
         <div class="row gx-5">
             <div class="col-xl-2">
@@ -152,5 +163,7 @@
             </div>
         </div>
     </div>
+    </div>
+  </section>
   #endexport
 #endextend
