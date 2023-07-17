@@ -32,6 +32,7 @@ struct WebsiteController: RouteCollection {
   func boot(routes: RoutesBuilder) throws {
     routes.get(use: indexHandler)
     routes.get("millenroad", "index", use: millenRoadIndexHandler)
+    routes.get("millenroad", "community", use: millenRoadCommunityHandler)
     routes.get("parking", use: parkingHandler)
     routes.get("millenroad", "diligence", use: millenRoadDiligenceHandler)
     routes.get("stoneycreek", "summary", use: stoneyCreekSummaryHandler)
@@ -53,9 +54,14 @@ struct WebsiteController: RouteCollection {
     }
 
     func millenRoadIndexHandler(_ req: Request) throws -> EventLoopFuture<View> {
-        return req.view.render("millenRoad/index")
+        let context = MillenRoadContext(heroTitle: "Overview")
+        return req.view.render("millenRoad/index", context)
     }
 
+    func millenRoadCommunityHandler(_ req: Request) throws -> EventLoopFuture<View> {
+        let context = MillenRoadContext(heroTitle: "Community")
+        return req.view.render("millenRoad/community", context)
+    }
 
     func millenRoadDiligenceHandler(_ req: Request) throws -> EventLoopFuture<Response> {
         return req.eventLoop.makeSucceededFuture(req.redirect(to: "https://owpinvesting-my.sharepoint.com/:f:/g/personal/ayoung_onewaypath_com/Ere1v7NgIhNJjiXI9VR60f0BHHnlZZhMdTsXjg9EikeaEQ?e=Wo5tcr"))
@@ -208,6 +214,10 @@ func acronymIndexHandler(_ req: Request) -> EventLoopFuture<View> {
       acronym.delete(on: req.db).transform(to: req.redirect(to: "/"))
     }
   }
+}
+
+struct MillenRoadContext: Encodable {
+    let heroTitle: String
 }
 
 struct IndexContext: Encodable {
