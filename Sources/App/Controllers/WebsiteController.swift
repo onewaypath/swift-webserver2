@@ -33,6 +33,7 @@ struct WebsiteController: RouteCollection {
     routes.get(use: indexHandler)
     routes.get("millenroad", "index", use: millenRoadIndexHandler)
     routes.get("millenroad", "community", use: millenRoadCommunityHandler)
+    routes.get("millenroad", "team", use: millenRoadTeamHandler)
     routes.get("parking", use: parkingHandler)
     routes.get("millenroad", "diligence", use: millenRoadDiligenceHandler)
     routes.get("stoneycreek", "summary", use: stoneyCreekSummaryHandler)
@@ -61,6 +62,11 @@ struct WebsiteController: RouteCollection {
     func millenRoadCommunityHandler(_ req: Request) throws -> EventLoopFuture<View> {
         let context = MillenRoadContext(heroTitle: "Community")
         return req.view.render("millenRoad/community", context)
+    }
+
+    func millenRoadTeamHandler(_ req: Request) throws -> EventLoopFuture<View> {
+        let context = MillenRoadContext(heroTitle: "Team")
+        return req.view.render("millenRoad/team", context)
     }
 
     func millenRoadDiligenceHandler(_ req: Request) throws -> EventLoopFuture<Response> {
