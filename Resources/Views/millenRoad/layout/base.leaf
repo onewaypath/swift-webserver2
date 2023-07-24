@@ -21,16 +21,16 @@
                   <div class="row gx-5">
                     <div class="col-sm-7 col-md-7 pb-4">
                       <h4 class="theme-light-color text-uppercase mb-3">About</h4>
-                      <p>One Way Path Communities builds multi-residential housing in liveable communities in and around the Greater Toronto Hamilton Area. These projects present an opportunity for equity investors to earn high rates of return with limited risk. Intrested equity and debt partners are invited to contact info@onewaypath.com for more information.</p>
+                      <p>#(project.aboutDescription)</p>
                     </div>
                     <div class="col-sm-5 col-lg-4 offset-lg-1 pb-4">
                         <h4 class="theme-light-color text-uppercase mb-3">Contact</h4>
                         <p>One Way Path Communities
-                        <br>100 King Street West, Suite 5600
-                        <br> Toronto, Ontario | Canada M5X 1C9
-                        <br> Tel: +1 (416) 848-1746
-                        <br> Tel: +1 (416) 848-1162
-                        <br> Email: info@onewaypath.com</p>
+                        <br>#(project.address)
+                        <br> #(project.city), #(project.province) | #(project.country) #(project.postalCode)
+                        <br> Tel: +1 #(project.phoneNumber)
+                        <br> Tel: +1 #(project.faxNumber)
+                        <br> Email: #(project.emailAddress)</p>
                     </div>
                   </div>
                 </div>

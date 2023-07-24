@@ -4,23 +4,23 @@ import Vapor
 final class Project: Model, Content {
     static let schema = "projects"
     
-    @ID
-    var id: UUID?
-    
-    @Field(key: "name")
+    @ID(custom: "id", generatedBy: .database)
+    var id: Int?
+
+    @Field(key: "project_name")
     var name: String
-    
-    @Field(key: "display_name")
+
+    @Field(key: "nick_name")
+    var nickName: String
+
+    @Field(key: "legal_name")
     var displayName: String
     
-    @Field(key: "about_description")
+    @Field(key: "about_text")
     var aboutDescription: String
     
-    @Field(key: "address_line1")
-    var addressLine1: String
-    
-    @Field(key: "address_line2")
-    var addressLine2: String
+    @Field(key: "address")
+    var address: String
     
     @Field(key: "city")
     var city: String
@@ -34,27 +34,27 @@ final class Project: Model, Content {
     @Field(key: "postal_code")
     var postalCode: String
     
-    @Field(key: "phone_number")
+    @Field(key: "telephone")
     var phoneNumber: String
     
-    @Field(key: "fax_number")
+    @Field(key: "fax")
     var faxNumber: String
     
     @Field(key: "email_address")
     var emailAddress: String
     
-    @Timestamp(key: "time_created", on: .create)
+    @Timestamp(key: "record_creation_date", on: .create)
     var timeCreated: Date?
     
     init() {}
     
-    init(id: UUID? = nil, name: String, displayName: String, aboutDescription: String, addressLine1: String, addressLine2: String, city: String, province: String, country: String, postalCode: String, phoneNumber: String, faxNumber: String, emailAddress: String, timeCreated: Date?) {
+    init(id: Int? = nil, name: String, nickName: String, displayName: String, aboutDescription: String, address: String, city: String, province: String, country: String, postalCode: String, phoneNumber: String, faxNumber: String, emailAddress: String, timeCreated: Date?) {
         self.id = id
         self.name = name
+        self.nickName = nickName
         self.displayName = displayName
         self.aboutDescription = aboutDescription
-        self.addressLine1 = addressLine1
-        self.addressLine2 = addressLine2
+        self.address = address
         self.city = city
         self.province = province
         self.country = country

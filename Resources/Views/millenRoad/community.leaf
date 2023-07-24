@@ -363,7 +363,7 @@
                             <div class="contact-right-panel">
                                 <p>Interested equity and debt partners are invited to email for information.</p>
                                 <a href="mailto:info@onewaypath.com" class="button-grp-warpper d-block">
-                                    <h5 class="text-lowercase">info@onewaypath.com</h5>
+                                    <h5 class="text-lowercase">#(project.emailAddress)</h5>
                                 </a>
                             </div>
                         </div>

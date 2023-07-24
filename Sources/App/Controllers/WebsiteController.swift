@@ -27,6 +27,7 @@
 /// THE SOFTWARE.
 
 import Vapor
+import Fluent
 
 struct WebsiteController: RouteCollection {
   func boot(routes: RoutesBuilder) throws {
@@ -54,19 +55,55 @@ struct WebsiteController: RouteCollection {
         return req.eventLoop.makeSucceededFuture(req.redirect(to: "index.html"))
     }
 
-    func millenRoadIndexHandler(_ req: Request) throws -> EventLoopFuture<View> {
-        let context = MillenRoadContext(heroTitle: "Overview")
-        return req.view.render("millenRoad/index", context)
+    func millenRoadIndexHandler(_ req: Request) async throws -> View {
+        guard let project = try await Project.query(on: req.db)
+            .filter(\.$id == 1)
+            .first() else {
+            throw Abort(.notFound)
+        }
+        let otherProjects = try await Project.query(on: req.db)
+            .filter(\.$id != 1)
+            .all()
+        let context = MillenRoadContext(
+            heroTitle: "Overview",
+            project: project,
+            otherProjects: otherProjects
+        )
+        return try await req.view.render("millenRoad/index", context)
     }
 
-    func millenRoadCommunityHandler(_ req: Request) throws -> EventLoopFuture<View> {
-        let context = MillenRoadContext(heroTitle: "Community")
-        return req.view.render("millenRoad/community", context)
+    func millenRoadCommunityHandler(_ req: Request) async throws -> View {
+        guard let project = try await Project.query(on: req.db)
+            .filter(\.$id == 1)
+            .first() else {
+            throw Abort(.notFound)
+        }
+        let otherProjects = try await Project.query(on: req.db)
+            .filter(\.$id != 1)
+            .all()
+        let context = MillenRoadContext(
+            heroTitle: "Community",
+            project: project,
+            otherProjects: otherProjects
+        )
+        return try await req.view.render("millenRoad/community", context)
     }
 
-    func millenRoadTeamHandler(_ req: Request) throws -> EventLoopFuture<View> {
-        let context = MillenRoadContext(heroTitle: "Team")
-        return req.view.render("millenRoad/team", context)
+    func millenRoadTeamHandler(_ req: Request) async throws -> View {
+        guard let project = try await Project.query(on: req.db)
+            .filter(\.$id == 1)
+            .first() else {
+            throw Abort(.notFound)
+        }
+        let otherProjects = try await Project.query(on: req.db)
+            .filter(\.$id != 1)
+            .all()
+        let context = MillenRoadContext(
+            heroTitle: "Team",
+            project: project,
+            otherProjects: otherProjects
+        )
+        return try await req.view.render("millenRoad/team", context)
     }
 
     func millenRoadDiligenceHandler(_ req: Request) throws -> EventLoopFuture<Response> {
@@ -224,6 +261,8 @@ func acronymIndexHandler(_ req: Request) -> EventLoopFuture<View> {
 
 struct MillenRoadContext: Encodable {
     let heroTitle: String
+    let project: Project
+    let otherProjects: [Project]
 }
 
 struct IndexContext: Encodable {
