@@ -32,11 +32,9 @@ import Fluent
 struct WebsiteController: RouteCollection {
   func boot(routes: RoutesBuilder) throws {
     routes.get(use: indexHandler)
-    routes.get("millenroad", "index", use: millenRoadIndexHandler)
-    routes.get("millenroad", "community", use: millenRoadCommunityHandler)
-    routes.get("millenroad", "team", use: millenRoadTeamHandler)
+    routes.get(":slug", ":page", use: millenRoadIndexHandler)
     routes.get("parking", use: parkingHandler)
-    routes.get("millenroad", "diligence", use: millenRoadDiligenceHandler)
+//    routes.get("millenroad", "diligence", use: millenRoadDiligenceHandler)
     routes.get("stoneycreek", "summary", use: stoneyCreekSummaryHandler)
     routes.get("acronyms", use: acronymIndexHandler)
     routes.get("acronyms", ":acronymID", use: acronymHandler)
@@ -56,54 +54,32 @@ struct WebsiteController: RouteCollection {
     }
 
     func millenRoadIndexHandler(_ req: Request) async throws -> View {
-        guard let project = try await Project.query(on: req.db)
-            .filter(\.$id == 1)
+        guard let projectSlug = req.parameters.get("slug"),
+              let page = req.parameters.get("page"),
+              let project = try await Project.query(on: req.db)
+            .filter(\.$slug == projectSlug)
             .first() else {
             throw Abort(.notFound)
         }
-        let otherProjects = try await Project.query(on: req.db)
-            .filter(\.$id != 1)
-            .all()
-        let context = MillenRoadContext(
-            heroTitle: "Overview",
-            project: project,
-            otherProjects: otherProjects
-        )
-        return try await req.view.render("millenRoad/index", context)
-    }
 
-    func millenRoadCommunityHandler(_ req: Request) async throws -> View {
-        guard let project = try await Project.query(on: req.db)
-            .filter(\.$id == 1)
-            .first() else {
-            throw Abort(.notFound)
-        }
         let otherProjects = try await Project.query(on: req.db)
-            .filter(\.$id != 1)
+            .filter(\.$slug != projectSlug)
             .all()
-        let context = MillenRoadContext(
-            heroTitle: "Community",
-            project: project,
-            otherProjects: otherProjects
-        )
-        return try await req.view.render("millenRoad/community", context)
-    }
 
-    func millenRoadTeamHandler(_ req: Request) async throws -> View {
-        guard let project = try await Project.query(on: req.db)
-            .filter(\.$id == 1)
-            .first() else {
-            throw Abort(.notFound)
+        let pageTitle: String
+        switch page {
+            case "index":
+                pageTitle = "Overview"
+            default:
+                pageTitle = page.capitalized
         }
-        let otherProjects = try await Project.query(on: req.db)
-            .filter(\.$id != 1)
-            .all()
+
         let context = MillenRoadContext(
-            heroTitle: "Team",
+            heroTitle: pageTitle,
             project: project,
             otherProjects: otherProjects
         )
-        return try await req.view.render("millenRoad/team", context)
+        return try await req.view.render("millenRoad/\(page)", context)
     }
 
     func millenRoadDiligenceHandler(_ req: Request) throws -> EventLoopFuture<Response> {

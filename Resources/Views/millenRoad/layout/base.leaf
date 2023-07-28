@@ -69,7 +69,7 @@
 
         <footer class="footer">
             <div class="container">
-                <p class="mb-0 text-white"><span class="theme-light-color fw-bold">&#169; 2022</span> One Way Path at Millen Road Inc. <span class="d-md-inline-block d-block">All rights reserved.</span></p>
+                <p class="mb-0 text-white"><span class="theme-light-color fw-bold">&#169; 2022</span> #(project.legalName). <span class="d-md-inline-block d-block">All rights reserved.</span></p>
             </div>
         </footer>
     </div>

@@ -45,10 +45,19 @@ final class Project: Model, Content {
     
     @Timestamp(key: "record_creation_date", on: .create)
     var timeCreated: Date?
-    
+
+    @Field(key: "url")
+    var url: String?
+
+    @Field(key: "legal_name")
+    var legalName: String
+
+    @Field(key: "slug")
+    var slug: String
+
     init() {}
     
-    init(id: Int? = nil, name: String, nickName: String, displayName: String, aboutDescription: String, address: String, city: String, province: String, country: String, postalCode: String, phoneNumber: String, faxNumber: String, emailAddress: String, timeCreated: Date?) {
+    init(id: Int? = nil, name: String, nickName: String, displayName: String, aboutDescription: String, address: String, city: String, province: String, country: String, postalCode: String, phoneNumber: String, faxNumber: String, emailAddress: String, timeCreated: Date?, url: String?, legalName: String, slug: String) {
         self.id = id
         self.name = name
         self.nickName = nickName
@@ -63,6 +72,9 @@ final class Project: Model, Content {
         self.faxNumber = faxNumber
         self.emailAddress = emailAddress
         self.timeCreated = timeCreated
+        self.url = url
+        self.legalName = legalName
+        self.slug = slug
     }
 
 }
