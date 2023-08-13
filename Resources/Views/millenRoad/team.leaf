@@ -410,10 +410,10 @@
     <section class="pagelink">
         <div class="container">
             <div class="btn-wrp d-flex flex-wrap justify-content-md-end justify-content-between">
-                <a href="#" class="btn mb-md-0">
+                <a href="index" class="btn mb-md-0">
                     OVERVIEW
                 </a>
-                <a href="#" class="btn mb-md-0">
+                <a href="community" class="btn mb-md-0">
                     COMMUNITY
                 </a>
                 <a href="#" class="btn mb-md-0">
@@ -433,48 +433,22 @@
                     </div>
                     <div class="col-xl-10">
                         <div class="row gx-xxl-5 proj-row flex-nowrap justify-content-between align-items-center">
-                            <div class="col-md-4 proj-col">
-                                <div class="proj-cards-wrapper">
-                                    <div class="proj-card">
-                                        <div class="proj-address">
-                                            <h2 class="text-uppercase"> @Dewitt Road</h2>
-                                        </div>
-                                        <div class="proj-address">
-                                            <a href="#" class="button-grp-warpper">
-                                                <h5>Click for details</h5>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 proj-col">
-                                <div class="proj-cards-wrapper">
-                                    <div class="proj-card">
-                                        <div class="proj-address">
-                                            <h2 class="text-uppercase"> @Dewitt Road</h2>
-                                        </div>
-                                        <div class="proj-button">
-                                            <a href="#" class="button-grp-warpper">
-                                                <h5>Click for details</h5>
-                                            </a>
+                            #for(p in otherProjects):
+                                <div class="col-md-4 proj-col">
+                                    <div class="proj-cards-wrapper">
+                                        <div class="proj-card">
+                                            <div class="proj-address">
+                                                <h2 class="text-uppercase"> #(p.nickName)</h2>
+                                            </div>
+                                            <div class="proj-address">
+                                                <a href="#(p.url)" class="button-grp-warpper">
+                                                    <h5>Click for details</h5>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4 proj-col">
-                                <div class="proj-cards-wrapper">
-                                    <div class="proj-card">
-                                        <div class="proj-address">
-                                            <h2 class="text-uppercase"> @Dewitt Road</h2>
-                                        </div>
-                                        <div class="proj-address">
-                                            <a href="#" class="button-grp-warpper">
-                                                <h5>Click for details</h5>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            #endfor
                         </div>
 
                     </div>
