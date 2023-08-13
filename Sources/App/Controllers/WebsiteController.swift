@@ -325,3 +325,10 @@ struct CreateAcronymFormData: Content {
   let long: String
   let categories: [String]?
 }
+
+struct SiteTeamContext: Encodable {
+    let leaderShip: [TeamMember]
+    let planningAndCommunityEngament: [TeamMember]
+    let designAndConstruction: [TeamMember]
+    let financeAccountingAndLegal: [TeamMember]
+}
