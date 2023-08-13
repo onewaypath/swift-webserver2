@@ -29,26 +29,23 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td>On-Site Parking</td>
-                                                <td>Private</td>
-                                                <td>0 meters</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Bus Route West on Highway 8</td>
-                                                <td>Public Transit</td>
-                                                <td>0 meters</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Bus Route West on Highway 9</td>
-                                                <td>Public Transit</td>
-                                                <td>40 meters</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Queen Elizabeth Way (QEW)</td>
-                                                <td>Freeway to Toronto</td>
-                                                <td>4 minutes drive</td>
-                                            </tr>
+                                            #for(service in communityServices.transportation):
+                                                <tr>
+                                                    <td>#(service.name)</td>
+                                                    <td>#(service.subcategory)</td>
+                                                    <td>
+                                                        #if(service.distanceInKilometers > 0):
+                                                            #(service.distanceInKilometers) kilometers
+                                                        #elseif(service.travelTimeFoot > 0):
+                                                            #(service.travelTimeFoot) minutes walk
+                                                        #elseif(service.travelTimeCar > 0):
+                                                            #(service.travelTimeCar) minutes drive
+                                                        #elseif(service.travelTimeTransit > 0):
+                                                            #(service.travelTimeTransit) minutes
+                                                        #endif
+                                                    </td>
+                                                </tr>
+                                            #endfor
                                         </tbody>
                                     </tbody>
                                 </table>
@@ -74,30 +71,14 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td>Farm Fresh Country Market</td>
-                                                <td>390 Barton Street</td>
-                                                <td>3 minutes</td>
-                                                <td>12 min walking</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Fortinos</td>
-                                                <td>102 Highway 8</td>
-                                                <td>4 minutes</td>
-                                                <td>6 minutes</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Food Basics</td>
-                                                <td>2500 Barton Street East</td>
-                                                <td>7 minutes</td>
-                                                <td>21 minutes</td>
-                                            </tr>
-                                            <tr>
-                                                <td>No Frills</td>
-                                                <td>640 Queenston Road</td>
-                                                <td>10 minutes</td>
-                                                <td>23 minutes</td>
-                                            </tr>
+                                            #for(store in communityServices.groceryStore):
+                                                <tr>
+                                                    <td>#(store.name)</td>
+                                                    <td>#(store.address)</td>
+                                                    <td>#(store.travelTimeCar) minutes</td>
+                                                    <td>#(store.travelTimeTransit) minutes</td>
+                                                </tr>
+                                            #endfor
                                         </tbody>
                                     </tbody>
                                 </table>
@@ -122,61 +103,13 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td>South Meadow Elementary</td>
-                                                <td>School</td>
-                                                <td>School Grounds</td>
-                                            </tr>
-                                            <tr>
-                                                <td>St. Francis Xavier Elementary</td>
-                                                <td>School</td>
-                                                <td>School Grounds</td>
-                                            </tr>
-                                            <tr>
-                                                <td>St. Clare of Assisi Elementary</td>
-                                                <td>School</td>
-                                                <td>School Grounds</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Peachwood Parkette</td>
-                                                <td>Parkette</td>
-                                                <td>Passive</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Memorial Park</td>
-                                                <td>Neighbourhood Park</td>
-                                                <td>Passive</td>
-                                            </tr>
-                                            <tr>
-                                                <td>John Santarelli Plateau Park</td>
-                                                <td>Parkette</td>
-                                                <td>Passive</td>
-                                            </tr>
-                                            <tr>
-                                                <td>King Street Parkette</td>
-                                                <td>Parkette</td>
-                                                <td>Historical</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Hunter Estates Park</td>
-                                                <td>Neighbourhood Park</td>
-                                                <td>Sports</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Ferris Park</td>
-                                                <td>Neighbourhood Park</td>
-                                                <td>Sports</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Dewitt Park</td>
-                                                <td>Neighbourhood Park</td>
-                                                <td>Sports</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Cenotaph Park</td>
-                                                <td>Parkette</td>
-                                                <td>Historical</td>
-                                            </tr>
+                                            #for(park in communityServices.park):
+                                                <tr>
+                                                    <td>#(park.name)</td>
+                                                    <td>#(park.subcategory)</td>
+                                                    <td>#(park.description)</td>
+                                                </tr>
+                                            #endfor
                                         </tbody>
                                     </tbody>
                                 </table>
@@ -202,26 +135,13 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td>St Francis Early Learning and Care Centre</td>
-                                                <td>298 Highway #8</td>
-                                                <td>Todler to Primary/Junior</td>
-                                            </tr>
-                                            <tr>
-                                                <td>South Meadow Childcare Centre</td>
-                                                <td>23 Royce Avenue</td>
-                                                <td>Infant to Primary/Junior</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Sunshine & Rainbows Christian Day Care Centre</td>
-                                                <td>440 Highway #8</td>
-                                                <td>Todler & Pre-School</td>
-                                            </tr>
-                                            <tr>
-                                                <td>St. Clare of Assisi Before & After School Program</td>
-                                                <td>185 Glenashton Drive</td>
-                                                <td>Kindergarten & Primary/Junior</td>
-                                            </tr>
+                                            #for(childCareFacility in communityServices.childCare):
+                                                <tr>
+                                                    <td>#(childCareFacility.name)</td>
+                                                    <td>#(childCareFacility.address)</td>
+                                                    <td>#(childCareFacility.subcategory)</td>
+                                                </tr>
+                                            #endfor
                                         </tbody>
                                     </tbody>
                                 </table>
@@ -247,31 +167,13 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td>South Meadow Elementary School</td>
-                                                <td>23 Royce Avenue</td>
-                                                <td>Kindergarten – Grade 8</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Orchard Park Secondary School</td>
-                                                <td>200 Dewitt Road</td>
-                                                <td>Grades 9 – 12</td>
-                                            </tr>
-                                            <tr>
-                                                <td>St. Francis Xavier Elementary School</td>
-                                                <td>298 Highway No. 8</td>
-                                                <td>Kindergarten – Grade 8</td>
-                                            </tr>
-                                            <tr>
-                                                <td>St. Clare of Assisi Elementary School</td>
-                                                <td>185 Glenashton Drive</td>
-                                                <td>Kindergarten – Grade 8</td>
-                                            </tr>
-                                            <tr>
-                                                <td>H.G. Brewster Pool</td>
-                                                <td>206 Dewitt Road</td>
-                                                <td>Pool, Lockers, Activity Room</td>
-                                            </tr>
+                                            #for(school in communityServices.school):
+                                                <tr>
+                                                    <td>#(school.name)</td>
+                                                    <td>#(school.address)</td>
+                                                    <td>#(school.subcategory)</td>
+                                                </tr>
+                                            #endfor
                                         </tbody>
                                     </tbody>
                                 </table>
@@ -279,13 +181,13 @@
                         </div>
                     </div>
                     <div class="btn-wrp d-flex flex-wrap justify-content-md-end justify-content-between">
-                        <a href="#" class="btn mb-md-0">
+                        <a href="index" class="btn mb-md-0">
                             OVERVIEW
                         </a>
                         <a href="#" class="btn mb-md-0">
                             PROGRESS
                         </a>
-                        <a href="#" class="btn mb-md-0">
+                        <a href="team" class="btn mb-md-0">
                             TEAM
                         </a>
                     </div>
@@ -304,48 +206,22 @@
                         </div>
                         <div class="col-xl-10">
                             <div class="row gx-xxl-5 proj-row flex-nowrap justify-content-between align-items-center">
-                                <div class="col-md-4 proj-col">
+                                #for(p in otherProjects):
+                                  <div class="col-md-4 proj-col">
                                     <div class="proj-cards-wrapper">
-                                        <div class="proj-card">
-                                            <div class="proj-address">
-                                                <h2 class="text-uppercase"> @Dewitt Road</h2>
-                                            </div>
-                                            <div class="proj-address">
-                                                <a href="#" class="button-grp-warpper">
-                                                    <h5>Click for details</h5>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                      <div class="proj-card">
+                                          <div class="proj-address">
+                                              <h2 class="text-uppercase"> #(p.nickName)</h2>
+                                          </div>
+                                          <div class="proj-address">
+                                              <a href="#(p.url)" class="button-grp-warpper">
+                                                  <h5>Click for details</h5>
+                                              </a>
+                                          </div>
+                                      </div>
+                                  </div>
                                 </div>
-                                <div class="col-md-4 proj-col">
-                                    <div class="proj-cards-wrapper">
-                                        <div class="proj-card">
-                                            <div class="proj-address">
-                                                <h2 class="text-uppercase"> @Dewitt Road</h2>
-                                            </div>
-                                            <div class="proj-button">
-                                                <a href="#" class="button-grp-warpper">
-                                                    <h5>Click for details</h5>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 proj-col">
-                                    <div class="proj-cards-wrapper">
-                                        <div class="proj-card">
-                                            <div class="proj-address">
-                                                <h2 class="text-uppercase"> @Dewitt Road</h2>
-                                            </div>
-                                            <div class="proj-address">
-                                                <a href="#" class="button-grp-warpper">
-                                                    <h5>Click for details</h5>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                #endfor
                             </div>
 
                         </div>
