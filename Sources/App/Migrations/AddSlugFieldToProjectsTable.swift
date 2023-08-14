@@ -5,8 +5,8 @@
 //  Created by Carlos Aguilar on 7/27/23.
 //
 
-import Foundation
 import Fluent
+import Foundation
 
 struct AddSlugFieldToProjectsTable: AsyncMigration {
     func prepare(on database: Database) async throws {
