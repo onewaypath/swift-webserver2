@@ -67,17 +67,29 @@ struct WebsiteController: RouteCollection {
             .all()
 
         let pageTitle: String
+        var communityServices: CommunityServicesContext
+
         switch page {
             case "index":
                 pageTitle = "Overview"
+                communityServices = CommunityServicesContext(from: [:])
+            case "community":
+                let services = try! await CommunityService.query(on: req.db)
+                    .filter(\.$project.$id == project.id!)
+                    .all()
+                let communityServicesDict = Dictionary(grouping: services) { $0.category.lowercased() }
+                communityServices = CommunityServicesContext(from: communityServicesDict)
+                pageTitle = ""
             default:
                 pageTitle = page.capitalized
+                communityServices = CommunityServicesContext(from: [:])
         }
 
         let context = MillenRoadContext(
             heroTitle: pageTitle,
             project: project,
-            otherProjects: otherProjects
+            otherProjects: otherProjects,
+            communityServices: communityServices
         )
         return try await req.view.render("millenRoad/\(page)", context)
     }
@@ -239,6 +251,25 @@ struct MillenRoadContext: Encodable {
     let heroTitle: String
     let project: Project
     let otherProjects: [Project]
+    let communityServices: CommunityServicesContext
+}
+
+struct CommunityServicesContext: Encodable {
+    let transportation: [CommunityService]
+    let groceryStore: [CommunityService]
+    let park: [CommunityService]
+    let childCare: [CommunityService]
+    let school: [CommunityService]
+    let communityCentre: [CommunityService]
+
+    init(from services: [String: [CommunityService]]) {
+        transportation = services["transportation", default: []]
+        groceryStore = services["grocery store", default: []]
+        park = services["park", default: []]
+        childCare = services["child care", default: []]
+        school = services["school", default: []]
+        communityCentre = services["community centre", default: []]
+    }
 }
 
 struct IndexContext: Encodable {
