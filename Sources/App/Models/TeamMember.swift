@@ -29,6 +29,15 @@ final class TeamMember: Model, Content {
     @Field(key: "company")
     var company: String
 
+    @Field(key: "linkedin")
+    var linkedIn: URL?
+
+    @Field(key: "bio_link")
+    var bioLink: URL?
+
+    @Children(for: \.$teamMember)
+    var bulletPoints: [BiographyBullet]
+
     init() {}
 
     init(id: Int? = nil, category: String, firstName: String, lastName: String, position: String, company: String) {

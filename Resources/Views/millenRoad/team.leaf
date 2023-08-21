@@ -19,62 +19,40 @@
                 <div class="col-xl-10 col-right">
                     <div class="team-box">
                         <div class="row team-row">
+                            #for(member in teamContext.leadership):
                             <div class="col-md-4 col-sm-6 team-col">
                                 <div class="team-card">
                                     <div class="team-title text-white d-flex flex-column flex-wrap">
-                                        <h3>ALEX YOUNG</h3>
-                                        <h4 class="subtitle">Chief Executive Officer</h4>
+                                        <h3>#(member.firstName) #(member.lastName)</h3>
+                                        <h4 class="subtitle">#(member.position)</h4>
                                         <div class="mt-auto text-end">
-                                            <button class="border-0 p-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#teamOne" aria-expanded="false" aria-controls="teamOne">
+                                            <button class="border-0 p-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#team#(member.id)" aria-expanded="false" aria-controls="team#(member.id)">
                                                 <img src="/redesign/assets/images/Arrow-Up.svg" alt="">
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="collapse team-desc" id="teamOne">
+                                    <div class="collapse team-desc" id="team#(member.id)">
                                         <div class="team-descWrp">
                                             <ul>
-                                                <li>Lawyer & member of Law Society of Ontario </li>
-                                                <li>Worked for over 10 years in federal and provincial government</li>
-                                                <li>In private sector, provided financial and legal oversight of large</li>
-                                                <li>Infrastructure programs for First Nations in mining, transportation and energy sectors</li>
+                                                #for(bullet in member.bulletPoints):
+                                                    <li>#(bullet.text)</li>
+                                                #endfor
                                             </ul>
                                             <div class="text-end mt-md-5 mt-3 pt-md-0 pt-2">
-                                                <a href="#" class="btn mb-md-0">
+                                                <a href="#if(member.linkedIn.isNotEmpty): #(member.linkedIn) #endif" class="btn mb-md-0">
                                                     LINKED-IN
+                                                </a>
+                                            </div>
+                                            <div class="text-end mt-md-5 mt-3 pt-md-0 pt-2">
+                                                <a href="#if(member.bioLink.isNotEmpty): #(member.bioLink) #endif" class="btn mb-md-0">
+                                                    BIOGRAPHY
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-sm-6 team-col">
-                                <div class="team-card">
-                                    <div class="team-title text-white d-flex flex-column flex-wrap">
-                                        <h3>MIRIAN YOUNG</h3>
-                                        <h4 class="subtitle">Chief Design Officer</h4>
-                                        <div class="mt-auto text-end">
-                                            <button class="border-0 p-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#teamTwo" aria-expanded="false" aria-controls="teamTwo">
-                                                <img src="/redesign/assets/images/Arrow-Up.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="collapse team-desc" id="teamTwo">
-                                        <div class="team-descWrp">
-                                            <ul>
-                                                <li>Lawyer & member of Law Society of Ontario </li>
-                                                <li>Worked for over 10 years in federal and provincial government</li>
-                                                <li>In private sector, provided financial and legal oversight of large</li>
-                                                <li>Infrastructure programs for First Nations in mining, transportation and energy sectors</li>
-                                            </ul>
-                                            <div class="text-end mt-md-5 mt-3 pt-md-0 pt-2">
-                                                <a href="#" class="btn mb-md-0">
-                                                    LINKED-IN
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            #endfor
                         </div>
                     </div>
                 </div>
@@ -90,62 +68,40 @@
                 <div class="col-xl-10 col-right">
                     <div class="team-box">
                         <div class="row team-row">
+                            #for(member in teamContext.planningAndCommunityEngament):
                             <div class="col-md-4 col-sm-6 team-col">
                                 <div class="team-card">
                                     <div class="team-title text-white d-flex flex-column flex-wrap">
-                                        <h3>JOE MIHEVC</h3>
-                                        <h4 class="subtitle">Director of Community Engagement</h4>
+                                        <h3>#(member.firstName) #(member.lastName)</h3>
+                                        <h4 class="subtitle">#(member.position)</h4>
                                         <div class="mt-auto text-end">
-                                            <button class="border-0 p-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#teamThree" aria-expanded="false" aria-controls="teamThree">
+                                            <button class="border-0 p-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#team#(member.id)" aria-expanded="false" aria-controls="team#(member.id)">
                                                 <img src="/redesign/assets/images/Arrow-Up.svg" alt="">
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="collapse team-desc" id="teamThree">
+                                    <div class="collapse team-desc" id="team#(member.id)">
                                         <div class="team-descWrp">
                                             <ul>
-                                                <li>Lawyer & member of Law Society of Ontario </li>
-                                                <li>Worked for over 10 years in federal and provincial government</li>
-                                                <li>In private sector, provided financial and legal oversight of large</li>
-                                                <li>Infrastructure programs for First Nations in mining, transportation and energy sectors</li>
+                                                #for(bullet in member.bulletPoints):
+                                                    <li>#(bullet.text)</li>
+                                                #endfor
                                             </ul>
                                             <div class="text-end mt-md-5 mt-3 pt-md-0 pt-2">
-                                                <a href="#" class="btn mb-md-0">
+                                                <a href="#if(member.linkedIn.isNotEmpty): #(member.linkedIn) #endif" class="btn mb-md-0">
                                                     LINKED-IN
+                                                </a>
+                                            </div>
+                                            <div class="text-end mt-md-5 mt-3 pt-md-0 pt-2">
+                                                <a href="#if(member.bioLink.isNotEmpty): #(member.bioLink) #endif" class="btn mb-md-0">
+                                                    BIOGRAPHY
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-sm-6 team-col">
-                                <div class="team-card">
-                                    <div class="team-title text-white d-flex flex-column flex-wrap">
-                                        <h3>ROBERT WALTER-JOSEPH</h3>
-                                        <h4 class="subtitle">Urban Planner</h4>
-                                        <div class="mt-auto text-end">
-                                            <button class="border-0 p-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#teamFour" aria-expanded="false" aria-controls="teamFour">
-                                                <img src="/redesign/assets/images/Arrow-Up.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="collapse team-desc" id="teamFour">
-                                        <div class="team-descWrp">
-                                            <ul>
-                                                <li>Lawyer & member of Law Society of Ontario </li>
-                                                <li>Worked for over 10 years in federal and provincial government</li>
-                                                <li>In private sector, provided financial and legal oversight of large</li>
-                                                <li>Infrastructure programs for First Nations in mining, transportation and energy sectors</li>
-                                            </ul>
-                                            <div class="text-end mt-md-5 mt-3 pt-md-0 pt-2">
-                                                <a href="#" class="btn mb-md-0">
-                                                    LINKED-IN
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            #endfor
                         </div>
                     </div>
                 </div>
@@ -160,146 +116,40 @@
                 <div class="col-xl-10 col-right">
                     <div class="team-box">
                         <div class="row team-row">
+                            #for(member in teamContext.designAndConstruction):
                             <div class="col-md-4 col-sm-6 team-col">
                                 <div class="team-card">
                                     <div class="team-title text-white d-flex flex-column flex-wrap">
-                                        <h3>SAM SPAGNUOLO</h3>
-                                        <h4 class="subtitle">Lead Architect</h4>
+                                        <h3>#(member.firstName) #(member.lastName)</h3>
+                                        <h4 class="subtitle">#(member.position)</h4>
                                         <div class="mt-auto text-end">
-                                            <button class="border-0 p-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#teamFive" aria-expanded="false" aria-controls="teamFive">
+                                            <button class="border-0 p-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#team#(member.id)" aria-expanded="false" aria-controls="team#(member.id)">
                                                 <img src="/redesign/assets/images/Arrow-Up.svg" alt="">
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="collapse team-desc" id="teamFive">
+                                    <div class="collapse team-desc" id="team#(member.id)">
                                         <div class="team-descWrp">
                                             <ul>
-                                                <li>Lawyer & member of Law Society of Ontario </li>
-                                                <li>Worked for over 10 years in federal and provincial government</li>
-                                                <li>In private sector, provided financial and legal oversight of large</li>
-                                                <li>Infrastructure programs for First Nations in mining, transportation and energy sectors</li>
+                                                #for(bullet in member.bulletPoints):
+                                                    <li>#(bullet.text)</li>
+                                                #endfor
                                             </ul>
                                             <div class="text-end mt-md-5 mt-3 pt-md-0 pt-2">
-                                                <a href="#" class="btn mb-md-0">
+                                                <a href="#if(member.linkedIn.isNotEmpty): #(member.linkedIn) #endif" class="btn mb-md-0">
                                                     LINKED-IN
+                                                </a>
+                                            </div>
+                                            <div class="text-end mt-md-5 mt-3 pt-md-0 pt-2">
+                                                <a href="#if(member.bioLink.isNotEmpty): #(member.bioLink) #endif" class="btn mb-md-0">
+                                                    BIOGRAPHY
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-sm-6 team-col">
-                                <div class="team-card">
-                                    <div class="team-title text-white d-flex flex-column flex-wrap">
-                                        <h3>AARON ENGEL</h3>
-                                        <h4 class="subtitle">Construction Manager</h4>
-                                        <div class="mt-auto text-end">
-                                            <button class="border-0 p-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#teamSix" aria-expanded="false" aria-controls="teamSix">
-                                                <img src="/redesign/assets/images/Arrow-Up.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="collapse team-desc" id="teamSix">
-                                        <div class="team-descWrp">
-                                            <ul>
-                                                <li>Lawyer & member of Law Society of Ontario </li>
-                                                <li>Worked for over 10 years in federal and provincial government</li>
-                                                <li>In private sector, provided financial and legal oversight of large</li>
-                                                <li>Infrastructure programs for First Nations in mining, transportation and energy sectors</li>
-                                            </ul>
-                                            <div class="text-end mt-md-5 mt-3 pt-md-0 pt-2">
-                                                <a href="#" class="btn mb-md-0">
-                                                    LINKED-IN
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 team-col">
-                                <div class="team-card">
-                                    <div class="team-title text-white d-flex flex-column flex-wrap">
-                                        <h3>JAMES SAMUEL</h3>
-                                        <h4 class="subtitle">Structural Engineer</h4>
-                                        <div class="mt-auto text-end">
-                                            <button class="border-0 p-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#teamSeven" aria-expanded="false" aria-controls="teamSeven">
-                                                <img src="/redesign/assets/images/Arrow-Up.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="collapse team-desc" id="teamSeven">
-                                        <div class="team-descWrp">
-                                            <ul>
-                                                <li>Lawyer & member of Law Society of Ontario </li>
-                                                <li>Worked for over 10 years in federal and provincial government</li>
-                                                <li>In private sector, provided financial and legal oversight of large</li>
-                                                <li>Infrastructure programs for First Nations in mining, transportation and energy sectors</li>
-                                            </ul>
-                                            <div class="text-end mt-md-5 mt-3 pt-md-0 pt-2">
-                                                <a href="#" class="btn mb-md-0">
-                                                    LINKED-IN
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 team-col">
-                                <div class="team-card">
-                                    <div class="team-title text-white d-flex flex-column flex-wrap">
-                                        <h3>ASRAFF ABASS</h3>
-                                        <h4 class="subtitle">Geotechnical Engineer</h4>
-                                        <div class="mt-auto text-end">
-                                            <button class="border-0 p-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#teamEight" aria-expanded="false" aria-controls="teamEight">
-                                                <img src="/redesign/assets/images/Arrow-Up.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="collapse team-desc" id="teamEight">
-                                        <div class="team-descWrp">
-                                            <ul>
-                                                <li>Lawyer & member of Law Society of Ontario </li>
-                                                <li>Worked for over 10 years in federal and provincial government</li>
-                                                <li>In private sector, provided financial and legal oversight of large</li>
-                                                <li>Infrastructure programs for First Nations in mining, transportation and energy sectors</li>
-                                            </ul>
-                                            <div class="text-end mt-md-5 mt-3 pt-md-0 pt-2">
-                                                <a href="#" class="btn mb-md-0">
-                                                    LINKED-IN
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 team-col">
-                                <div class="team-card">
-                                    <div class="team-title text-white d-flex flex-column flex-wrap">
-                                        <h3>BRIAN VERSPAGEN</h3>
-                                        <h4 class="subtitle">Civil Engineer</h4>
-                                        <div class="mt-auto text-end">
-                                            <button class="border-0 p-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#teamNine" aria-expanded="false" aria-controls="teamNine">
-                                                <img src="/redesign/assets/images/Arrow-Up.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="collapse team-desc" id="teamNine">
-                                        <div class="team-descWrp">
-                                            <ul>
-                                                <li>Lawyer & member of Law Society of Ontario </li>
-                                                <li>Worked for over 10 years in federal and provincial government</li>
-                                                <li>In private sector, provided financial and legal oversight of large</li>
-                                                <li>Infrastructure programs for First Nations in mining, transportation and energy sectors</li>
-                                            </ul>
-                                            <div class="text-end mt-md-5 mt-3 pt-md-0 pt-2">
-                                                <a href="#" class="btn mb-md-0">
-                                                    LINKED-IN
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            #endfor
                         </div>
                     </div>
                 </div>
@@ -315,92 +165,40 @@
                 <div class="col-xl-10 col-right">
                     <div class="team-box">
                         <div class="row team-row">
+                            #for(member in teamContext.financeAccountingAndLegal):
                             <div class="col-md-4 col-sm-6 team-col">
                                 <div class="team-card">
                                     <div class="team-title text-white d-flex flex-column flex-wrap">
-                                        <h3>BRENT WALKER</h3>
-                                        <h4 class="subtitle"><span>Morrison Park Advisors</span>
-                                            Financial Advisor</h4>
+                                        <h3>#(member.firstName) #(member.lastName)</h3>
+                                        <h4 class="subtitle">#(member.position)</h4>
                                         <div class="mt-auto text-end">
-                                            <button class="border-0 p-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#teamTevel" aria-expanded="false" aria-controls="teamTevel">
+                                            <button class="border-0 p-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#team#(member.id)" aria-expanded="false" aria-controls="team#(member.id)">
                                                 <img src="/redesign/assets/images/Arrow-Up.svg" alt="">
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="collapse team-desc" id="teamTevel">
+                                    <div class="collapse team-desc" id="team#(member.id)">
                                         <div class="team-descWrp">
                                             <ul>
-                                                <li>Lawyer & member of Law Society of Ontario </li>
-                                                <li>Worked for over 10 years in federal and provincial government</li>
-                                                <li>In private sector, provided financial and legal oversight of large</li>
-                                                <li>Infrastructure programs for First Nations in mining, transportation and energy sectors</li>
+                                                #for(bullet in member.bulletPoints):
+                                                    <li>#(bullet.text)</li>
+                                                #endfor
                                             </ul>
                                             <div class="text-end mt-md-5 mt-3 pt-md-0 pt-2">
-                                                <a href="#" class="btn mb-md-0">
+                                                <a href="#if(member.linkedIn.isNotEmpty): #(member.linkedIn) #endif" class="btn mb-md-0">
                                                     LINKED-IN
+                                                </a>
+                                            </div>
+                                            <div class="text-end mt-md-5 mt-3 pt-md-0 pt-2">
+                                                <a href="#if(member.bioLink.isNotEmpty): #(member.bioLink) #endif" class="btn mb-md-0">
+                                                    BIOGRAPHY
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-sm-6 team-col">
-                                <div class="team-card">
-                                    <div class="team-title text-white d-flex flex-column flex-wrap">
-                                        <h3>JENNIFER AGRO</h3>
-                                        <h4 class="subtitle"><span>BDO Canada LLP</span> Assurance Accountant and Tax Advisor</h4>
-                                        <div class="mt-auto text-end">
-                                            <button class="border-0 p-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#teamTherteen" aria-expanded="false" aria-controls="teamTherteen">
-                                                <img src="/redesign/assets/images/Arrow-Up.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="collapse team-desc" id="teamTherteen">
-                                        <div class="team-descWrp">
-                                            <ul>
-                                                <li>Lawyer & member of Law Society of Ontario </li>
-                                                <li>Worked for over 10 years in federal and provincial government</li>
-                                                <li>In private sector, provided financial and legal oversight of large</li>
-                                                <li>Infrastructure programs for First Nations in mining, transportation and energy sectors</li>
-                                            </ul>
-                                            <div class="text-end mt-md-5 mt-3 pt-md-0 pt-2">
-                                                <a href="#" class="btn mb-md-0">
-                                                    LINKED-IN
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 team-col">
-                                <div class="team-card">
-                                    <div class="team-title text-white d-flex flex-column flex-wrap">
-                                        <h3>DANNY McMULLEN</h3>
-                                        <h4 class="subtitle"><span>Northview Law</span>
-                                            Legal Advisor</h4>
-                                        <div class="mt-auto text-end">
-                                            <button class="border-0 p-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#teamFourteen" aria-expanded="false" aria-controls="teamFourteen">
-                                                <img src="/redesign/assets/images/Arrow-Up.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="collapse team-desc" id="teamFourteen">
-                                        <div class="team-descWrp">
-                                            <ul>
-                                                <li>Lawyer & member of Law Society of Ontario </li>
-                                                <li>Worked for over 10 years in federal and provincial government</li>
-                                                <li>In private sector, provided financial and legal oversight of large</li>
-                                                <li>Infrastructure programs for First Nations in mining, transportation and energy sectors</li>
-                                            </ul>
-                                            <div class="text-end mt-md-5 mt-3 pt-md-0 pt-2">
-                                                <a href="#" class="btn mb-md-0">
-                                                    LINKED-IN
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            #endfor
                         </div>
                     </div>
                 </div>
