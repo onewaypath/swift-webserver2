@@ -34,9 +34,7 @@
                                     <div class="collapse team-desc" id="team#(member.id)">
                                         <div class="team-descWrp">
                                             <ul>
-                                                #for(bullet in member.bulletPoints):
-                                                    <li>#(bullet.text)</li>
-                                                #endfor
+                                                #sortedElements(member.bulletPoints)
                                             </ul>
                                             <div class="text-end mt-md-5 mt-3 pt-md-0 pt-2">
                                                 <a href="#if(member.linkedIn.isNotEmpty): #(member.linkedIn) #endif" class="btn mb-md-0">
