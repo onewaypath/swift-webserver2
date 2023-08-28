@@ -12,8 +12,8 @@ import Fluent
 final class Webpage: Model {
     static let schema = "web_pages"
     
-    @ID(custom: "id", generatedBy: .database)
-    var id: Int?
+    @ID
+    var id: UUID?
     
     @Field(key: "name")
     var name: String
@@ -32,7 +32,7 @@ final class Webpage: Model {
     
     init() {}
     
-    init(id: Int? = nil, name: String, leafTemplate: String, projectID: Project.IDValue, parentID: Webpage.IDValue? = nil) {
+    init(id: UUID? = nil, name: String, leafTemplate: String, projectID: Project.IDValue, parentID: Webpage.IDValue? = nil) {
         self.id = id
         self.name = name
         self.leafTemplate = leafTemplate

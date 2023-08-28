@@ -30,7 +30,7 @@ struct WebpagesController: RouteCollection {
     }
 
     func getHandler(_ req: Request) throws -> EventLoopFuture<Webpage> {
-        guard let webpageID = req.parameters.get("webpageID", as: Int.self) else {
+        guard let webpageID = req.parameters.get("webpageID", as: UUID.self) else {
             throw Abort(.badRequest)
         }
         
@@ -40,7 +40,7 @@ struct WebpagesController: RouteCollection {
 }
 
 struct CreateWebpageData: Content {
-    let projectID: Int
+    let projectID: UUID
     let webpages: [WebpageData]
 }
 
