@@ -27,14 +27,12 @@
 /// THE SOFTWARE.
 
 import Vapor
-import Fluent
 
 struct WebsiteController: RouteCollection {
   func boot(routes: RoutesBuilder) throws {
     routes.get(use: indexHandler)
-    routes.get(":slug", ":page", use: millenRoadIndexHandler)
     routes.get("parking", use: parkingHandler)
-//    routes.get("millenroad", "diligence", use: millenRoadDiligenceHandler)
+    routes.get("millenroad", "diligence", use: millenRoadDiligenceHandler)
     routes.get("stoneycreek", "summary", use: stoneyCreekSummaryHandler)
     routes.get("acronyms", use: acronymIndexHandler)
     routes.get("acronyms", ":acronymID", use: acronymHandler)
@@ -52,60 +50,7 @@ struct WebsiteController: RouteCollection {
     func indexHandler(_ req: Request) throws -> EventLoopFuture<Response> {
         return req.eventLoop.makeSucceededFuture(req.redirect(to: "index.html"))
     }
-
-    func millenRoadIndexHandler(_ req: Request) async throws -> View {
-        guard let projectSlug = req.parameters.get("slug"),
-              let page = req.parameters.get("page"),
-              let project = try await Project.query(on: req.db)
-            .filter(\.$slug == projectSlug)
-            .first() else {
-            throw Abort(.notFound)
-        }
-
-        let otherProjects = try await Project.query(on: req.db)
-            .filter(\.$slug != projectSlug)
-            .all()
-
-        let pageTitle: String
-        var communityServices: CommunityServicesContext
-        let team: SiteTeamContext
-
-        switch page {
-            case "index":
-                pageTitle = "Overview"
-                communityServices = CommunityServicesContext(from: [:])
-                team = SiteTeamContext(from: [:])
-            case "community":
-                let services = try! await CommunityService.query(on: req.db)
-                    .filter(\.$project.$id == project.id!)
-                    .all()
-                let communityServicesDict = Dictionary(grouping: services) { $0.category.lowercased() }
-                communityServices = CommunityServicesContext(from: communityServicesDict)
-                pageTitle = ""
-                team = SiteTeamContext(from: [:])
-            case "team":
-                pageTitle = page.capitalized
-                let teamMembers = try await TeamMember.query(on: req.db)
-                    .with(\.$bulletPoints)
-                    .all()
-                let teamMembersDict = Dictionary(grouping: teamMembers) { $0.category.lowercased() }
-                communityServices = CommunityServicesContext(from: [:])
-                team = SiteTeamContext(from: teamMembersDict)
-            default:
-                pageTitle = page.capitalized
-                communityServices = CommunityServicesContext(from: [:])
-                team = SiteTeamContext(from: [:])
-        }
-
-        let context = MillenRoadContext(
-            heroTitle: pageTitle,
-            project: project,
-            otherProjects: otherProjects,
-            communityServices: communityServices,
-            teamContext: team
-        )
-        return try await req.view.render("millenRoad/\(page)", context)
-    }
+    
 
     func millenRoadDiligenceHandler(_ req: Request) throws -> EventLoopFuture<Response> {
         return req.eventLoop.makeSucceededFuture(req.redirect(to: "https://owpinvesting-my.sharepoint.com/:f:/g/personal/ayoung_onewaypath_com/Ere1v7NgIhNJjiXI9VR60f0BHHnlZZhMdTsXjg9EikeaEQ?e=Wo5tcr"))
@@ -260,32 +205,6 @@ func acronymIndexHandler(_ req: Request) -> EventLoopFuture<View> {
   }
 }
 
-struct MillenRoadContext: Encodable {
-    let heroTitle: String
-    let project: Project
-    let otherProjects: [Project]
-    let communityServices: CommunityServicesContext
-    let teamContext: SiteTeamContext
-}
-
-struct CommunityServicesContext: Encodable {
-    let transportation: [CommunityService]
-    let groceryStore: [CommunityService]
-    let park: [CommunityService]
-    let childCare: [CommunityService]
-    let school: [CommunityService]
-    let communityCentre: [CommunityService]
-
-    init(from services: [String: [CommunityService]]) {
-        transportation = services["transportation", default: []]
-        groceryStore = services["grocery store", default: []]
-        park = services["park", default: []]
-        childCare = services["child care", default: []]
-        school = services["school", default: []]
-        communityCentre = services["community centre", default: []]
-    }
-}
-
 struct IndexContext: Encodable {
   let title: String
   let acronyms: [Acronym]
@@ -338,18 +257,4 @@ struct CreateAcronymFormData: Content {
   let short: String
   let long: String
   let categories: [String]?
-}
-
-struct SiteTeamContext: Encodable {
-    let leadership: [TeamMember]
-    let planningAndCommunityEngament: [TeamMember]
-    let designAndConstruction: [TeamMember]
-    let financeAccountingAndLegal: [TeamMember]
-
-    init(from team: [String: [TeamMember]]) {
-        leadership = team["leadership", default: []]
-        planningAndCommunityEngament = team["planning and community engagement", default: []]
-        designAndConstruction = team["design and construction", default: []]
-        financeAccountingAndLegal = team["finance, accounting and legal", default: []]
-    }
 }
