@@ -1,0 +1,143 @@
+#extend("millenRoad/layout/base"):
+  #export("hero_body"):
+    <p class="text-white mb-4">
+        One Way Path Communities builds multi-residential housing in liveable communities in and around the Greater Toronto Hamilton Area.
+    </p>
+    <p class="text-white">
+        These projects present an opportunity for equity investors to earn high rates of return with limited risk while promoting access to housing.
+    </p>
+  #endexport
+  
+  #export("content"):
+  <section class="owp-panel pt-160">
+    <div class="container">
+      <div class="project-overview-panel">
+        <div class="row gx-5">
+            <div class="col-xl-2">
+                <div class="left-panel">
+                    <h4 class="theme-light-color">Project <br> Overview</h4>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-6 mb-lg-0 mb-3">
+                <div class="center-panel">
+                    <h2>One Way Path AT Millen Road</h2>
+                    <p>
+                        Our Millen Road project consists of a 7-story, 37 unit apartment building at the corner of Highway 8 and Millen Road, two arterial roads in Stoney Creek, Ontario.
+                    </p>
+                    <p>
+                        This project, which will tap into the high demand for rental housing in the Greater Toronto Hamilton Area, projects a net return of 22% per annum for equity investors over three years.
+                    </p>
+
+                    <p>
+                        Construction risk is limited by two key factors. Firstly, we apply our contracting experience to performance guarantees with sub-contrators which promotes on-time on budget construction results. Secondly, our team has combined experience building hundreds of multi-residential units in the GTHA.
+                    </p>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-6">
+                <div class="right-panel">
+                    <div class="unit-wrapper border-bottom">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-3">
+                                <h2 class="number">37</h2>
+                            </div>
+                            <div class="col-7 ps-0">
+                                <div>
+                                    <span class="detail">unit apartment building</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="unit-wrapper border-bottom">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-3">
+                                <h2 class="number">22%</h2>
+                            </div>
+                            <div class="col-7 ps-0">
+                                <div>
+                                    <span class="detail">per annum for equity investors over three years.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-button-panel pt-100">
+                        <div class="row">
+                            <div class="col-xxl-10 col-12">
+                                <div class="row justify-content-between btn-row">
+                                    <div class="col-xl-5 col-lg-6 col-5">
+                                        <a href="community" class="button-grp-warpper">
+                                            <h5>Community</h5>
+                                        </a>
+                                    </div>
+                                    <div class="col-xl-5 col-lg-6 col-5">
+                                        <a href="#" class="button-grp-warpper">
+                                            <h5>Progress</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-between btn-row">
+                                    <div class="col-xl-5 col-lg-6 col-5">
+                                        <a  href="team" class="button-grp-warpper">
+                                            <h5>Team</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="other-projects-panel pt-100">
+        <div class="row">
+            <div class="col-xl-2">
+                <div class="left-panel">
+                    <h4 class="theme-light-color mb-4">Other Projects</h4>
+                </div>
+            </div>
+            <div class="col-xl-10">
+                <div class="row gx-xxl-5 proj-row flex-nowrap justify-content-between align-items-center">
+                    #for(p in otherProjects):
+                      <div class="col-md-4 proj-col">
+                        <div class="proj-cards-wrapper">
+                          <div class="proj-card">
+                              <div class="proj-address">
+                                  <h2 class="text-uppercase"> #(p.nickName)</h2>
+                              </div>
+                              <div class="proj-address">
+                                  <a href="#(p.url)" class="button-grp-warpper">
+                                      <h5>Click for details</h5>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    #endfor
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="contactus-panel pt-100">
+        <div class="row justify-content-between">
+            <div class="col-lg-3 col-sm-6">
+                <div class="left-panel">
+                    <h4 class="theme-light-color">Contact us</h4>
+                </div>
+            </div>
+            <div class="col-lg-5 col-sm-6">
+                <div class="contact-right-panel">
+                    <p>Interested equity and debt partners are invited to email for information.</p>
+                    <a href="mailto:info@onewaypath.com" class="button-grp-warpper d-block">
+                        <h5 class="text-lowercase">#(project.emailAddress)</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  </section>
+  #endexport
+#endextend
