@@ -68,6 +68,8 @@ public func configure(_ app: Application) throws {
     app.migrations.add(CreateProject())
     app.migrations.add(CreateWebpage())
     app.migrations.add(AddSlugFieldToProjectsTable())
+    app.migrations.add(CreateTeam())
+    app.migrations.add(AddLinkedInAndBioLinkFieldsToTeams())
 
 
     app.logger.logLevel = .debug
@@ -75,6 +77,7 @@ public func configure(_ app: Application) throws {
     try app.autoMigrate().wait()
 
     app.views.use(.leaf)
+    app.leaf.tags["sortedElements"] = SortedElementList()
 
     // register routes
     try routes(app)

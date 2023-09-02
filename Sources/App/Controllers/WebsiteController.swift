@@ -68,11 +68,13 @@ struct WebsiteController: RouteCollection {
 
         let pageTitle: String
         var communityServices: CommunityServicesContext
+        let team: SiteTeamContext
 
         switch page {
             case "index":
                 pageTitle = "Overview"
                 communityServices = CommunityServicesContext(from: [:])
+                team = SiteTeamContext(from: [:])
             case "community":
                 let services = try! await CommunityService.query(on: req.db)
                     .filter(\.$project.$id == project.id!)
@@ -80,16 +82,27 @@ struct WebsiteController: RouteCollection {
                 let communityServicesDict = Dictionary(grouping: services) { $0.category.lowercased() }
                 communityServices = CommunityServicesContext(from: communityServicesDict)
                 pageTitle = ""
+                team = SiteTeamContext(from: [:])
+            case "team":
+                pageTitle = page.capitalized
+                let teamMembers = try await TeamMember.query(on: req.db)
+                    .with(\.$bulletPoints)
+                    .all()
+                let teamMembersDict = Dictionary(grouping: teamMembers) { $0.category.lowercased() }
+                communityServices = CommunityServicesContext(from: [:])
+                team = SiteTeamContext(from: teamMembersDict)
             default:
                 pageTitle = page.capitalized
                 communityServices = CommunityServicesContext(from: [:])
+                team = SiteTeamContext(from: [:])
         }
 
         let context = MillenRoadContext(
             heroTitle: pageTitle,
             project: project,
             otherProjects: otherProjects,
-            communityServices: communityServices
+            communityServices: communityServices,
+            teamContext: team
         )
         return try await req.view.render("millenRoad/\(page)", context)
     }
@@ -252,6 +265,7 @@ struct MillenRoadContext: Encodable {
     let project: Project
     let otherProjects: [Project]
     let communityServices: CommunityServicesContext
+    let teamContext: SiteTeamContext
 }
 
 struct CommunityServicesContext: Encodable {
@@ -324,4 +338,18 @@ struct CreateAcronymFormData: Content {
   let short: String
   let long: String
   let categories: [String]?
+}
+
+struct SiteTeamContext: Encodable {
+    let leadership: [TeamMember]
+    let planningAndCommunityEngament: [TeamMember]
+    let designAndConstruction: [TeamMember]
+    let financeAccountingAndLegal: [TeamMember]
+
+    init(from team: [String: [TeamMember]]) {
+        leadership = team["leadership", default: []]
+        planningAndCommunityEngament = team["planning and community engagement", default: []]
+        designAndConstruction = team["design and construction", default: []]
+        financeAccountingAndLegal = team["finance, accounting and legal", default: []]
+    }
 }
