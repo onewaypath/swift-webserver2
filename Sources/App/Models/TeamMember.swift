@@ -38,6 +38,9 @@ final class TeamMember: Model, Content {
     @Children(for: \.$teamMember)
     var bulletPoints: [BiographyBullet]
 
+    @Children(for: \.$teamMember)
+    var projects: [MemberProject]
+
     init() {}
 
     init(id: Int? = nil, category: String, firstName: String, lastName: String, position: String, company: String) {
