@@ -87,6 +87,7 @@ struct WebsiteController: RouteCollection {
                 pageTitle = page.capitalized
                 let teamMembers = try await TeamMember.query(on: req.db)
                     .with(\.$bulletPoints)
+                    .with(\.$projects)
                     .all()
                 let teamMembersDict = Dictionary(grouping: teamMembers) { $0.category.lowercased() }
                 communityServices = CommunityServicesContext(from: [:])

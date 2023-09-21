@@ -12,8 +12,8 @@ class CreateTeamProjects: AsyncMigration {
     func prepare(on database: Database) async throws {
         try await database
             .schema("team_projects")
-            .id()
-            .field("team_id", .string, .required, .references("team", "id"))
+            .field("id", .int, .identifier(auto: true))
+            .field("team_id", .int, .required, .references("teams", "id"))
             .field("heading", .string, .required)
             .field("description", .string, .required)
             .field("image", .string, .required)

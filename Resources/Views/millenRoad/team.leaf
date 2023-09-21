@@ -26,12 +26,48 @@
                                         <h3>#(member.firstName) #(member.lastName)</h3>
                                         <h4 class="subtitle">#(member.position)</h4>
                                         <div class="mt-auto text-end">
-                                            <button class="border-0 p-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#team#(member.id)" aria-expanded="false" aria-controls="team#(member.id)">
+                                            <button class="border-0 p-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="##(member.firstName)#(member.lastName)" aria-expanded="false" aria-controls="#(member.firstName)#(member.lastName)">
                                                 <img src="/redesign/assets/images/Arrow-Up.svg" alt="">
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="collapse team-desc" id="team#(member.id)">
+                                                                #if(count(member.projects) > 0):
+                                </div>
+                            </div>
+                            <div class="team-slider-sec position-relative">
+                                <div class="collapse team-desc col-12 team-col mb-0" id="#(member.firstName)#(member.lastName)">
+                                    <div class="row team-row">
+                                        <div class="col-md-4 team-col mb-0 col-left text-md-center text-end order-md-1 order-2">
+                                            <div class="d-inline-block text-start">
+                                                <h3 class="text-uppercase d-md-block d-none">#(member.firstName) #(member.lastName)</h3>
+                                                <p class="d-md-block d-none">#(member.position)</p>
+                                                <a href="#" class="btn mb-0">
+                                                    LINKED-IN
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8 team-col mb-0 order-md-2 order-1">
+                                            <div class="team-slider">
+                                                #for(project in member.projects):
+                                                <div>
+                                                    <div class="team-slide">
+                                                        <div class="img-wrapper mb-4">
+                                                            <img src="/redesign/assets/#(project.image)" alt="">
+                                                        </div>
+                                                        <p><b>#(project.heading)</b></p>
+                                                        <div>
+                                                            <p class="mb-0">#(project.description)</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                #endfor
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            #else:
+                                    <div class="collapse team-desc" id="#(member.firstName)#(member.lastName)">
                                         <div class="team-descWrp">
                                             <ul>
                                                 #sortedElements(member.bulletPoints)
@@ -48,6 +84,9 @@
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                            #endif
                                 </div>
                             </div>
                             #endfor
@@ -73,17 +112,51 @@
                                         <h3>#(member.firstName) #(member.lastName)</h3>
                                         <h4 class="subtitle">#(member.position)</h4>
                                         <div class="mt-auto text-end">
-                                            <button class="border-0 p-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#team#(member.id)" aria-expanded="false" aria-controls="team#(member.id)">
+                                            <button class="border-0 p-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="##(member.firstName)#(member.lastName)" aria-expanded="false" aria-controls="#(member.firstName)#(member.lastName)">
                                                 <img src="/redesign/assets/images/Arrow-Up.svg" alt="">
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="collapse team-desc" id="team#(member.id)">
+                            #if(count(member.projects) > 0):
+                                </div>
+                            </div>
+                            <div class="team-slider-sec position-relative">
+                                <div class="collapse team-desc col-12 team-col mb-0" id="#(member.firstName)#(member.lastName)">
+                                    <div class="row team-row">
+                                        <div class="col-md-4 team-col mb-0 col-left text-md-center text-end order-md-1 order-2">
+                                            <div class="d-inline-block text-start">
+                                                <h3 class="text-uppercase d-md-block d-none">#(member.firstName) #(member.lastName)</h3>
+                                                <p class="d-md-block d-none">#(member.position)</p>
+                                                <a href="#" class="btn mb-0">
+                                                    LINKED-IN
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8 team-col mb-0 order-md-2 order-1">
+                                            <div class="team-slider">
+                                                #for(project in member.projects):
+                                                <div>
+                                                    <div class="team-slide">
+                                                        <div class="img-wrapper mb-4">
+                                                            <img src="/redesign/assets/#(project.image)" alt="">
+                                                        </div>
+                                                        <p><b>#(project.heading)</b></p>
+                                                        <div>
+                                                            <p class="mb-0">#(project.description)</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                #endfor
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            #else:
+                                    <div class="collapse team-desc" id="#(member.firstName)#(member.lastName)">
                                         <div class="team-descWrp">
                                             <ul>
-                                                #for(bullet in member.bulletPoints):
-                                                    <li>#(bullet.text)</li>
-                                                #endfor
+                                                #sortedElements(member.bulletPoints)
                                             </ul>
                                             <div class="text-end mt-md-5 mt-3 pt-md-0 pt-2">
                                                 <a href="#if(member.linkedIn.isNotEmpty): #(member.linkedIn) #endif" class="btn mb-md-0">
@@ -97,6 +170,9 @@
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                            #endif
                                 </div>
                             </div>
                             #endfor
@@ -121,17 +197,51 @@
                                         <h3>#(member.firstName) #(member.lastName)</h3>
                                         <h4 class="subtitle">#(member.position)</h4>
                                         <div class="mt-auto text-end">
-                                            <button class="border-0 p-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#team#(member.id)" aria-expanded="false" aria-controls="team#(member.id)">
+                                            <button class="border-0 p-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="##(member.firstName)#(member.lastName)" aria-expanded="false" aria-controls="#(member.firstName)#(member.lastName)">
                                                 <img src="/redesign/assets/images/Arrow-Up.svg" alt="">
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="collapse team-desc" id="team#(member.id)">
+                            #if(count(member.projects) > 0):
+                                </div>
+                            </div>
+                            <div class="team-slider-sec position-relative">
+                                <div class="collapse team-desc col-12 team-col mb-0" id="#(member.firstName)#(member.lastName)">
+                                    <div class="row team-row">
+                                        <div class="col-md-4 team-col mb-0 col-left text-md-center text-end order-md-1 order-2">
+                                            <div class="d-inline-block text-start">
+                                                <h3 class="text-uppercase d-md-block d-none">#(member.firstName) #(member.lastName)</h3>
+                                                <p class="d-md-block d-none">#(member.position)</p>
+                                                <a href="#" class="btn mb-0">
+                                                    LINKED-IN
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8 team-col mb-0 order-md-2 order-1">
+                                            <div class="team-slider">
+                                                #for(project in member.projects):
+                                                <div>
+                                                    <div class="team-slide">
+                                                        <div class="img-wrapper mb-4">
+                                                            <img src="/redesign/assets/#(project.image)" alt="">
+                                                        </div>
+                                                        <p><b>#(project.heading)</b></p>
+                                                        <div>
+                                                            <p class="mb-0">#(project.description)</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                #endfor
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            #else:
+                                    <div class="collapse team-desc" id="#(member.firstName)#(member.lastName)">
                                         <div class="team-descWrp">
                                             <ul>
-                                                #for(bullet in member.bulletPoints):
-                                                    <li>#(bullet.text)</li>
-                                                #endfor
+                                                #sortedElements(member.bulletPoints)
                                             </ul>
                                             <div class="text-end mt-md-5 mt-3 pt-md-0 pt-2">
                                                 <a href="#if(member.linkedIn.isNotEmpty): #(member.linkedIn) #endif" class="btn mb-md-0">
@@ -147,6 +257,7 @@
                                     </div>
                                 </div>
                             </div>
+                            #endif
                             #endfor
                         </div>
                     </div>
@@ -170,17 +281,51 @@
                                         <h3>#(member.firstName) #(member.lastName)</h3>
                                         <h4 class="subtitle">#(member.position)</h4>
                                         <div class="mt-auto text-end">
-                                            <button class="border-0 p-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#team#(member.id)" aria-expanded="false" aria-controls="team#(member.id)">
+                                            <button class="border-0 p-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="##(member.firstName)#(member.lastName)" aria-expanded="false" aria-controls="#(member.firstName)#(member.lastName)">
                                                 <img src="/redesign/assets/images/Arrow-Up.svg" alt="">
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="collapse team-desc" id="team#(member.id)">
+                            #if(count(member.projects) > 0):
+                                </div>
+                            </div>
+                            <div class="team-slider-sec position-relative">
+                                <div class="collapse team-desc col-12 team-col mb-0" id="#(member.firstName)#(member.lastName)">
+                                    <div class="row team-row">
+                                        <div class="col-md-4 team-col mb-0 col-left text-md-center text-end order-md-1 order-2">
+                                            <div class="d-inline-block text-start">
+                                                <h3 class="text-uppercase d-md-block d-none">#(member.firstName) #(member.lastName)</h3>
+                                                <p class="d-md-block d-none">#(member.position)</p>
+                                                <a href="#" class="btn mb-0">
+                                                    LINKED-IN
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8 team-col mb-0 order-md-2 order-1">
+                                            <div class="team-slider">
+                                                #for(project in member.projects):
+                                                <div>
+                                                    <div class="team-slide">
+                                                        <div class="img-wrapper mb-4">
+                                                            <img src="/redesign/assets/#(project.image)" alt="">
+                                                        </div>
+                                                        <p><b>#(project.heading)</b></p>
+                                                        <div>
+                                                            <p class="mb-0">#(project.description)</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                #endfor
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            #else:
+                                    <div class="collapse team-desc" id="#(member.firstName)#(member.lastName)">
                                         <div class="team-descWrp">
                                             <ul>
-                                                #for(bullet in member.bulletPoints):
-                                                    <li>#(bullet.text)</li>
-                                                #endfor
+                                                #sortedElements(member.bulletPoints)
                                             </ul>
                                             <div class="text-end mt-md-5 mt-3 pt-md-0 pt-2">
                                                 <a href="#if(member.linkedIn.isNotEmpty): #(member.linkedIn) #endif" class="btn mb-md-0">
@@ -194,6 +339,9 @@
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                            #endif
                                 </div>
                             </div>
                             #endfor
