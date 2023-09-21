@@ -8,6 +8,8 @@
     <link rel="shortcut icon" type="assets/images/x-icon" href="/redesign/assets/images/fevicon.png" />
     <!-- Bootstrap CSS -->
     <link href="/redesign/assets/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link href="/redesign/assets/css/slick.css" type="text/css" rel="stylesheet" />
     <!-- Custom css -->
     <link href="/redesign/assets/css/style.css" type="text/css" rel="stylesheet" />
     <link href="/redesign/assets/css/responsive.css" type="text/css" rel="stylesheet" />
@@ -78,6 +80,8 @@
     <script type='text/javascript' src="/redesign/assets/js/jquery-3.5.1.min.js"></script>
     <!-- Bootstrap JS -->
     <script type='text/javascript' src="/redesign/assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Slick JS -->
+    <script type='text/javascript' src="/redesign/assets/js/slick.min.js"></script>
     <!-- Custom JQuery -->
     <script type='text/javascript' src="/redesign/assets/js/custom.js"></script>
 
