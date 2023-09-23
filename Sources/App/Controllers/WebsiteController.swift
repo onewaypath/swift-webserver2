@@ -32,7 +32,7 @@ import Fluent
 struct WebsiteController: RouteCollection {
   func boot(routes: RoutesBuilder) throws {
     routes.get(use: indexHandler)
-    routes.get(":slug", ":page", use: millenRoadIndexHandler)
+    routes.get(":slug", ":page", use: oneWayPathCommunitiesSiteHandler)
     routes.get("parking", use: parkingHandler)
 //    routes.get("millenroad", "diligence", use: millenRoadDiligenceHandler)
     routes.get("stoneycreek", "summary", use: stoneyCreekSummaryHandler)
@@ -53,7 +53,7 @@ struct WebsiteController: RouteCollection {
         return req.eventLoop.makeSucceededFuture(req.redirect(to: "index.html"))
     }
 
-    func millenRoadIndexHandler(_ req: Request) async throws -> View {
+    func oneWayPathCommunitiesSiteHandler(_ req: Request) async throws -> View {
         guard let projectSlug = req.parameters.get("slug"),
               let page = req.parameters.get("page"),
               let project = try await Project.query(on: req.db)
@@ -87,6 +87,7 @@ struct WebsiteController: RouteCollection {
                 pageTitle = page.capitalized
                 let teamMembers = try await TeamMember.query(on: req.db)
                     .with(\.$bulletPoints)
+                    .with(\.$projects)
                     .all()
                 let teamMembersDict = Dictionary(grouping: teamMembers) { $0.category.lowercased() }
                 communityServices = CommunityServicesContext(from: [:])

@@ -70,7 +70,7 @@ public func configure(_ app: Application) throws {
     app.migrations.add(AddSlugFieldToProjectsTable())
     app.migrations.add(CreateTeam())
     app.migrations.add(AddLinkedInAndBioLinkFieldsToTeams())
-
+    app.migrations.add(CreateTeamProjects())
 
     app.logger.logLevel = .debug
 
