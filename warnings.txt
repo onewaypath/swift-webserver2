@@ -1,0 +1,213 @@
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CURLParser.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CBacktrace.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CURLParser.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CBacktrace.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CURLParser.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CBacktrace.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CURLParser.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CBacktrace.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CURLParser.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CBacktrace.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CURLParser.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CBacktrace.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CURLParser.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CBacktrace.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CURLParser.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CBacktrace.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CURLParser.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CBacktrace.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CURLParser.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CBacktrace.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CURLParser.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CBacktrace.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CURLParser.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CBacktrace.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CURLParser.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CBacktrace.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CURLParser.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CBacktrace.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CURLParser.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CBacktrace.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CURLParser.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CBacktrace.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CURLParser.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CBacktrace.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CURLParser.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CBacktrace.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CURLParser.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CBacktrace.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CURLParser.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CBacktrace.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CURLParser.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CBacktrace.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CURLParser.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CBacktrace.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CURLParser.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CBacktrace.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CURLParser.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CBacktrace.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/Sources/App/configure.swift:53:22: warning: 'postgres(hostname:port:username:password:database:tlsConfiguration:maxConnectionsPerEventLoop:connectionPoolTimeout:encoder:decoder:sqlLogLevel:)' is deprecated: Use `.postgres(configuration:maxConnectionsPerEventLoop:connectionPoolTimeout:encodingContext:decodingContext:sqlLogLevel:)` instead.
+  app.databases.use(.postgres(
+                     ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CURLParser.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CBacktrace.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/Sources/App/configure.swift:53:22: warning: 'postgres(hostname:port:username:password:database:tlsConfiguration:maxConnectionsPerEventLoop:connectionPoolTimeout:encoder:decoder:sqlLogLevel:)' is deprecated: Use `.postgres(configuration:maxConnectionsPerEventLoop:connectionPoolTimeout:encodingContext:decodingContext:sqlLogLevel:)` instead.
+  app.databases.use(.postgres(
+                     ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CURLParser.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CBacktrace.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/Sources/App/configure.swift:53:22: warning: 'postgres(hostname:port:username:password:database:tlsConfiguration:maxConnectionsPerEventLoop:connectionPoolTimeout:encoder:decoder:sqlLogLevel:)' is deprecated: Use `.postgres(configuration:maxConnectionsPerEventLoop:connectionPoolTimeout:encodingContext:decodingContext:sqlLogLevel:)` instead.
+  app.databases.use(.postgres(
+                     ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CURLParser.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CBacktrace.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/Sources/App/configure.swift:53:22: warning: 'postgres(hostname:port:username:password:database:tlsConfiguration:maxConnectionsPerEventLoop:connectionPoolTimeout:encoder:decoder:sqlLogLevel:)' is deprecated: Use `.postgres(configuration:maxConnectionsPerEventLoop:connectionPoolTimeout:encodingContext:decodingContext:sqlLogLevel:)` instead.
+  app.databases.use(.postgres(
+                     ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CURLParser.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CBacktrace.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/Sources/App/configure.swift:53:22: warning: 'postgres(hostname:port:username:password:database:tlsConfiguration:maxConnectionsPerEventLoop:connectionPoolTimeout:encoder:decoder:sqlLogLevel:)' is deprecated: Use `.postgres(configuration:maxConnectionsPerEventLoop:connectionPoolTimeout:encodingContext:decodingContext:sqlLogLevel:)` instead.
+  app.databases.use(.postgres(
+                     ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CURLParser.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CBacktrace.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/Sources/App/configure.swift:53:22: warning: 'postgres(hostname:port:username:password:database:tlsConfiguration:maxConnectionsPerEventLoop:connectionPoolTimeout:encoder:decoder:sqlLogLevel:)' is deprecated: Use `.postgres(configuration:maxConnectionsPerEventLoop:connectionPoolTimeout:encodingContext:decodingContext:sqlLogLevel:)` instead.
+  app.databases.use(.postgres(
+                     ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CURLParser.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CBacktrace.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/Sources/App/configure.swift:53:22: warning: 'postgres(hostname:port:username:password:database:tlsConfiguration:maxConnectionsPerEventLoop:connectionPoolTimeout:encoder:decoder:sqlLogLevel:)' is deprecated: Use `.postgres(configuration:maxConnectionsPerEventLoop:connectionPoolTimeout:encodingContext:decodingContext:sqlLogLevel:)` instead.
+  app.databases.use(.postgres(
+                     ^
+warning: Will not do cross-module incremental builds, wrong version of priors; expected 1.4.0 but read 1.3.0 at '/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/Run.build/master.priors'
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CURLParser.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CBacktrace.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CURLParser.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/vapor/Sources/CURLParser/include"
+             ^
+/Users/alexyoung/Swift/onewaypath.com/.build/x86_64-apple-macosx/debug/CBacktrace.build/module.modulemap:2:14: warning: umbrella directory '/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include' not found
+    umbrella "/Users/alexyoung/Swift/onewaypath.com/.build/checkouts/swift-backtrace/Sources/CBacktrace/include"
