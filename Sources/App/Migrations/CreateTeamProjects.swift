@@ -7,6 +7,7 @@
 
 import Fluent
 import Foundation
+import SQLKit
 
 class CreateTeamProjects: AsyncMigration {
     func prepare(on database: Database) async throws {
@@ -17,6 +18,10 @@ class CreateTeamProjects: AsyncMigration {
             .field("heading", .string, .required)
             .field("description", .string, .required)
             .field("image", .string, .required)
+            .field("record_creation_date", .datetime, .sql(.default(SQLFunction("CURRENT_TIMESTAMP"))))
+            .field("record_amend_date", .datetime, .sql(.default(SQLFunction("CURRENT_TIMESTAMP"))))
+            .field("created_by", .string, .sql(.default(SQLFunction("CURRENT_USER"))))
+            .field("last_amended_by", .string, .sql(.default(SQLFunction("CURRENT_USER"))))
             .ignoreExisting()
             .create()
     }
