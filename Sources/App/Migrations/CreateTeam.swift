@@ -5,8 +5,8 @@
 //  Created by Carlos Aguilar on 8/13/23.
 //
 
-import Foundation
 import Fluent
+import Foundation
 
 struct CreateTeam: AsyncMigration {
     func prepare(on database: Database) async throws {
