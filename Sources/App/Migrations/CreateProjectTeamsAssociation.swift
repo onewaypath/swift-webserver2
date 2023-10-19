@@ -1,0 +1,32 @@
+//
+//  File.swift
+//  
+//
+//  Created by Carlos Aguilar on 10/19/23.
+//
+
+import Fluent
+import Foundation
+import SQLKit
+
+class CreateProjectTeamsAssociation: AsyncMigration {
+    func prepare(on database: Database) async throws {
+        try await database
+            .schema("project_teams_association")
+            .field("id", .int, .identifier(auto: true))
+            .field("project_id", .int, .references("projects", "id"))
+            .field("team_id", .int, .references("teams", "id"))
+            .field("record_creation_date", .custom(SQLRaw("TIMESTAMP WITHOUT TIME ZONE")), .sql(.default(SQLRaw("CURRENT_TIMESTAMP"))))
+            .field("record_amend_date", .custom(SQLRaw("TIMESTAMP WITHOUT TIME ZONE")), .sql(.default(SQLRaw("CURRENT_TIMESTAMP"))))
+            .field("created_by", .string, .sql(.default(SQLRaw("CURRENT_USER"))))
+            .field("last_amended_by", .string, .sql(.default(SQLRaw("CURRENT_USER"))))
+            .ignoreExisting()
+            .create()
+    }
+    
+    func revert(on database: Database) async throws {
+        try await database
+            .schema("project_teams_association")
+            .delete()
+    }
+}
