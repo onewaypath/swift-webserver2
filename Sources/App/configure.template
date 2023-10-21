@@ -71,6 +71,11 @@ public func configure(_ app: Application) throws {
     app.migrations.add(CreateTeam())
     app.migrations.add(AddLinkedInAndBioLinkFieldsToTeams())
     app.migrations.add(CreateTeamProjects())
+    app.migrations.add(CreateTeamBioBullets())
+    app.migrations.add(CreateCommunityServices())
+    app.migrations.add(CreateCityPlanningPrecedents())
+    app.migrations.add(CreateCityPlanningProgress())
+    app.migrations.add(CreateProjectTeamsAssociation())
 
     app.logger.logLevel = .debug
 

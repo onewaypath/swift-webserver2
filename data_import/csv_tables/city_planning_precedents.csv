@@ -1,0 +1,7 @@
+id,created_by,last_amended_by,project_id,address,height,distance_to_subject,status
+1,asadan,asadan,4,325 Highway 8,11,550,Approved
+2,asadan,asadan,4,319 Highway 8,7,600,Constructed
+3,asadan,asadan,4,495 Highway 8,7,700,Constructed
+4,asadan,asadan,1,325 Highway 8,11,550,Approved
+5,asadan,asadan,1,319 Highway 8,7,600,Constructed
+6,asadan,asadan,1,495 Highway 8,7,700,Constructed

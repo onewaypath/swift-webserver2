@@ -1,24 +1,22 @@
 //
-//  File.swift
-//  
+//  CreateTeamBioBullets.swift
 //
-//  Created by Carlos Aguilar on 8/13/23.
+//
+//  Created by Carlos Aguilar on 10/19/23.
 //
 
 import Fluent
 import Foundation
 import SQLKit
 
-struct CreateTeam: AsyncMigration {
+class CreateTeamBioBullets: AsyncMigration {
     func prepare(on database: Database) async throws {
         try await database
-            .schema("teams")
+            .schema("team_bio_bullets")
             .field("id", .int, .identifier(auto: true))
-            .field("category", .string, .required)
-            .field("first_name", .string, .required)
-            .field("last_name", .string, .required)
-            .field("position", .string, .required)
-            .field("company", .string, .required)
+            .field("team_id", .int, .references("teams", "id"))
+            .field("bullet_text", .string)
+            .field("bullet_order", .int)
             .field("record_creation_date", .custom(SQLRaw("TIMESTAMP WITHOUT TIME ZONE")), .sql(.default(SQLRaw("CURRENT_TIMESTAMP"))))
             .field("record_amend_date", .custom(SQLRaw("TIMESTAMP WITHOUT TIME ZONE")), .sql(.default(SQLRaw("CURRENT_TIMESTAMP"))))
             .field("created_by", .string, .sql(.default(SQLRaw("CURRENT_USER"))))
@@ -29,7 +27,7 @@ struct CreateTeam: AsyncMigration {
 
     func revert(on database: Database) async throws {
         try await database
-            .schema("teams")
+            .schema("team_bio_bullets")
             .delete()
     }
 }
