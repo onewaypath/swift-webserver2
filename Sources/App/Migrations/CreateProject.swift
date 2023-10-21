@@ -17,7 +17,7 @@ struct CreateProject: Migration {
       .field("about_text", .string)
       .field("url", .string)
       .field("legal_name", .string)
-      .field("nickname", .string)
+      .field("nick_name", .string)
       .field("address", .string)
       .field("city", .string)
       .field("province", .string)
