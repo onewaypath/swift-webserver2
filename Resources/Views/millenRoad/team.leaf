@@ -31,7 +31,7 @@
                                             </button>
                                         </div>
                                     </div>
-                                                                #if(count(member.projects) > 0):
+                            #if(count(member.projects) > 0):
                                 </div>
                             </div>
                             <div class="team-slider-sec position-relative">
@@ -87,8 +87,6 @@
                                 </div>
                             </div>
                             #endif
-                                </div>
-                            </div>
                             #endfor
                         </div>
                     </div>
@@ -173,8 +171,6 @@
                                 </div>
                             </div>
                             #endif
-                                </div>
-                            </div>
                             #endfor
                         </div>
                     </div>
@@ -342,8 +338,6 @@
                                 </div>
                             </div>
                             #endif
-                                </div>
-                            </div>
                             #endfor
                         </div>
                     </div>
