@@ -1,0 +1,57 @@
+id,created_by,last_amended_by,project_id,name,address,city,province,country,postal_code,category,subcategory,description,distance_km,travel_time_foot,travel_time_car,travel_time_transit
+3,asadan,asadan,4,Bus Route East on Highway 8,,,,,,Transportation,Public Transit,,0.04,0,0,0
+4,asadan,asadan,4,Queen Elizabeth Way (QEW),,,,,,Transportation,Freeway to Toronto,,0,0,4,0
+5,asadan,asadan,4,Farm Fresh Country Market,390 Barton Street,,,,,Grocery Store,,,0,12,3,0
+6,asadan,asadan,4,Fortinos,102 Highway 8,,,,,Grocery Store,,,0,0,4,6
+7,asadan,asadan,4,Food Basics,2500 Barton Street East,,,,,Grocery Store,,,0,0,7,21
+8,asadan,asadan,4,No Frills,640 QUeenston Road,,,,,Grocery Store,,,0,0,10,23
+9,asadan,asadan,4,South Meadow Elementary,,,,,,Park,School,School Grounds,0,0,0,0
+10,asadan,asadan,4,St. Francis Xavier Elementary,,,,,,Park,School,School Grounds,0,0,0,0
+11,asadan,asadan,4,St. Clare of Assisi Elementary,,,,,,Park,School,School Grounds,0,0,0,0
+12,asadan,asadan,4,Peachwood Parkette,,,,,,Park,Parkette,Passive,0,0,0,0
+13,asadan,asadan,4,Memorial Park,,,,,,Park,Neighbourhood Park,Passive,0,0,0,0
+14,asadan,asadan,4,John Santarelli Plateau Park,,,,,,Park,Parkette,Passive,0,0,0,0
+15,asadan,asadan,4,King Street Parkette,,,,,,Park,Parkette,Historical,0,0,0,0
+16,asadan,asadan,4,Hunter Estates Park,,,,,,Park,Neighbourhood Park,Sports,0,0,0,0
+17,asadan,asadan,4,Ferris Park,,,,,,Park,Neighbourhood Park,Sports,0,0,0,0
+18,asadan,asadan,4,Dewitt Park,,,,,,Park,Neighbourhood Park,Sports,0,0,0,0
+19,asadan,asadan,4,Cenotaph Park,,,,,,Park,Parkette,Historical,0,0,0,0
+20,asadan,asadan,1,On-Site Parking,,,,,,Transportation,Private,,0,0,0,0
+22,asadan,asadan,1,Bus Route East on Highway 8,,,,,,Transportation,Public Transit,,0.04,0,0,0
+23,asadan,asadan,1,Queen Elizabeth Way (QEW),,,,,,Transportation,Freeway to Toronto,,0,0,4,0
+24,asadan,asadan,1,Farm Fresh Country Market,390 Barton Street,,,,,Grocery Store,,,0,12,3,0
+25,asadan,asadan,1,Fortinos,102 Highway 8,,,,,Grocery Store,,,0,0,4,6
+26,asadan,asadan,1,Food Basics,2500 Barton Street East,,,,,Grocery Store,,,0,0,7,21
+27,asadan,asadan,1,No Frills,640 QUeenston Road,,,,,Grocery Store,,,0,0,10,23
+28,asadan,asadan,1,South Meadow Elementary,,,,,,Park,School,School Grounds,0,0,0,0
+29,asadan,asadan,1,St. Francis Xavier Elementary,,,,,,Park,School,School Grounds,0,0,0,0
+30,asadan,asadan,1,St. Clare of Assisi Elementary,,,,,,Park,School,School Grounds,0,0,0,0
+31,asadan,asadan,1,Peachwood Parkette,,,,,,Park,Parkette,Passive,0,0,0,0
+32,asadan,asadan,1,Memorial Park,,,,,,Park,Neighbourhood Park,Passive,0,0,0,0
+33,asadan,asadan,1,John Santarelli Plateau Park,,,,,,Park,Parkette,Passive,0,0,0,0
+34,asadan,asadan,1,King Street Parkette,,,,,,Park,Parkette,Historical,0,0,0,0
+35,asadan,asadan,1,Hunter Estates Park,,,,,,Park,Neighbourhood Park,Sports,0,0,0,0
+36,asadan,asadan,1,Ferris Park,,,,,,Park,Neighbourhood Park,Sports,0,0,0,0
+37,asadan,asadan,1,Dewitt Park,,,,,,Park,Neighbourhood Park,Sports,0,0,0,0
+38,asadan,asadan,1,Cenotaph Park,,,,,,Park,Parkette,Historical,0,0,0,0
+39,asadan,asadan,4,St Francis Early Learning and Care Centre,298 Highway #8,,,,,Child Care,Todler to Primary/Junior,,0,0,0,0
+40,asadan,asadan,4,South Meadow Childcare Centre,23 Royce Avenue,,,,,Child Care,Infant to Primary/Junior,,0,0,0,0
+41,asadan,asadan,4,Sunshine & Rainbows Christian Day Care Centre,440 Highway #8,,,,,Child Care,Todler & Pre-School,,0,0,0,0
+42,asadan,asadan,4,St. Clare of Assisi Before & After School Program,185 Glenashton Drive,,,,,Child Care,Kindergarten & Primary/Junior,,0,0,0,0
+43,asadan,asadan,4,South Meadow Elementary School,23 Royce Avenue,,,,,School,Kindergarten – Grade 8,,0,0,0,0
+44,asadan,asadan,4,Orchard Park Secondary School,200 Dewitt Road,,,,,School,Grades 9 – 12,,0,0,0,0
+45,asadan,asadan,4,St. Francis Xavier Elementary School,298 Highway No. 8,,,,,School,Kindergarten – Grade 8,,0,0,0,0
+46,asadan,asadan,4,St. Clare of Assisi Elementary School,185 Glenashton Drive,,,,,School,Kindergarten – Grade 8,,0,0,0,0
+47,asadan,asadan,4,H.G. Brewster Pool,206 Dewitt Road,,,,,School,"Pool, Lockers, Activity Room",,0,0,0,0
+1,asadan,ayoung,4,On-Site Parking,,,,,,Transportation,Private,,0.01,0,0,0
+21,asadan,ayoung,1,Bus Route West on Highway 8,,,,,,Transportation,Public Transit,,0.01,0,0,0
+48,asadan,asadan,1,St Francis Early Learning and Care Centre,298 Highway #8,,,,,Child Care,Todler to Primary/Junior,,0,0,0,0
+49,asadan,asadan,1,South Meadow Childcare Centre,23 Royce Avenue,,,,,Child Care,Infant to Primary/Junior,,0,0,0,0
+50,asadan,asadan,1,Sunshine & Rainbows Christian Day Care Centre,440 Highway #8,,,,,Child Care,Todler & Pre-School,,0,0,0,0
+51,asadan,asadan,1,St. Clare of Assisi Before & After School Program,185 Glenashton Drive,,,,,Child Care,Kindergarten & Primary/Junior,,0,0,0,0
+52,asadan,asadan,1,South Meadow Elementary School,23 Royce Avenue,,,,,School,Kindergarten – Grade 8,,0,0,0,0
+53,asadan,asadan,1,Orchard Park Secondary School,200 Dewitt Road,,,,,School,Grades 9 – 12,,0,0,0,0
+54,asadan,asadan,1,St. Francis Xavier Elementary School,298 Highway No. 8,,,,,School,Kindergarten – Grade 8,,0,0,0,0
+55,asadan,asadan,1,St. Clare of Assisi Elementary School,185 Glenashton Drive,,,,,School,Kindergarten – Grade 8,,0,0,0,0
+56,asadan,asadan,1,H.G. Brewster Pool,206 Dewitt Road,,,,,School,"Pool, Lockers, Activity Room",,0,0,0,0
+2,asadan,ayoung,4,Bus Route West on Highway 8,,,,,,Transportation,Public Transit,,0.01,0,0,0
